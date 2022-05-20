@@ -28,61 +28,61 @@
                     <div class="icon" data-aos="fade-up">
                         <img src="/resources/service/env/images/sustain/sustain_tit_icon.png" alt="타이틀 아이콘">
                     </div>
-                    <h3 class="title" data-aos="fade-up" data-aos-offset="200">상담/제보</h3>
+                    <h3 class="title" data-aos="fade-up" data-aos-offset="200">Consulting/Reports</h3>
                     <div class="tit_line"></div>
 
                     <div class="sub_contents ethic_contents">
                         <div class="inner">
                             <div class="top">
                                 <ul class="tab_list" data-aos="fade-up" data-aos-duration="600" data-aos-offset="200" data-aos-delay="500">
-                                    <li class=""><a href="/en/sub.do?MENUID=ethical_management&MENUNO=3">윤리경영 소개</a></li>
-                                    <li class="on"><a href="/en/sub.do?MENUID=tip_off&MENUNO=3">상담/제보</a></li>
+                                    <li class=""><a href="/en/sub.do?MENUID=ethical_management&MENUNO=3">Introduction to Ethical Management</a></li>
+                                    <li class="on"><a href="/en/sub.do?MENUID=tip_off&MENUNO=3">Consulting/Reports</a></li>
                                 </ul>
                             </div>
                             <div class="ethic_wrap speakup_wrap">
                                 <section class="section1" data-aos="fade-up" data-aos-duration="700" data-aos-delay="600">
                                     <div class="speakup_banner">
-                                        <p>EMC는 구성원들의<br class="br_m"> 비윤리 행위에 대하여 제보를 받습니다.</p>
+                                        <p>We ask for reports in the case of unethical conduct by our members.</p>
                                         <div>
                                             <div class="icon"><img src="/resources/service/env/images/sustain/ethical_speakup_icon01.png" alt="상담/제보 아이콘"></div>
                                             <ol>
-                                                <li>우월적 지위를 이용하여 이해관계자로부터 금품, 향응, 등을 수수하는 행위</li>
-                                                <li>회사 자산을 사적으로 사용하는 행위</li>
-                                                <li>갑질, 막말 등 비윤리행위 등  </li>
+                                                <li>Receiving money, valuables, entertainment, etc., from interested parties by using a superior position</li>
+                                                <li>Private use of company assets</li>
+                                                <li>Unethical behaviors such as abusing power, using foul language, etc.</li>
                                             </ol>
                                         </div>
                                     </div>
                                 </section>
                                 <section class="section2" data-aos="fade-up" data-aos-duration="700" data-aos-offset="400">
-                                    <p class="s_tit">제보 방법</p>
+                                    <p class="s_tit">How to Report</p>
                                     <div class="s_con">
                                         <ul>
-                                            <li>비윤리 행위에 대하여 제보할 수 있도록 윤리경영 상담/제보 채널을 운영하고 있으며 실명 또는 익명으로 제보 할 수 있습니다.</li>
-                                            <li>윤리경영 상담/제보는 우편, 인터넷, 이메일 등 가장 편리한 방법을 이용하시기 바랍니다.</li>
+                                            <li>We operate an ethical management counseling/reporting channel to receive reports of unethical behavior. Reports can be made under a real name or anonymously.</li>
+                                            <li>For the purpose of ethical management counseling/reporting, please use the most convenient method, such as by mail, via the Internet, or by email.</li>
                                         </ul>
                                         <p>
-                                            우편 : 경기도 안양시 일직로 88 케이타워 8~9층 윤리경영 담당자<br>
-                                            인터넷 : https://ethics.sk.co.kr/<br>
-                                            전화 : 031-8091-2044<br>
+                                            Mail : Representative of Ethical Management, Environment Management Corporation, K-Tower 8th and 9th floor, 88, Iljik-ro, Manan-gu, Anyang-si, Gyeonggi-do, Republic of Korea<br>
+                                            Website : https://ethics.sk.co.kr/<br>
+                                            Tel. : 031-8091-2044<br>
                                             E-mail : ethics@emc-env.com                                            
                                         </p>
-                                        <div class="btn_box"><a href="https://ethics.sk.co.kr" target="_blank" title="제보하기 새창으로열기">제보하기</a></div>
+                                        <div class="btn_box"><a href="https://ethics.sk.co.kr" target="_blank" title="제보하기 새창으로열기">Report</a></div>
                                     </div>
                                 </section>
                                 <section class="section3" data-aos="fade-up" data-aos-duration="700" data-aos-offset="400">
-                                    <p class="s_tit">제보자 보호 규정</p>
+                                    <p class="s_tit">Whistleblower Protection System</p>
                                     <div class="s_con">
                                         <ul>
-                                            <li>제보자가 어떠한 불이익도 받지 않고 제보할 수 있도록 제보자 보호규정을 제정하여 운영하고 있으며, 처리결과를 알려드리고 있습니다.</li>
-                                            <li>제보자의 신원 및 제보내용은 공개되지 않도록 철저히 보호됩니다.</li>
-                                            <li>제보자에 대한 불이익, 신원 노출 등 제보자 보호규정 위반 시 중징계 함을 원칙으로 하고 있습니다</li>
+                                            <li>We have established and operate a whistleblower protection system for informants to report their concerns, without the worry of any disadvantages or recrimination. The results of the reports are notified to the informant.</li>
+                                            <li>The whistleblower’s identity and the contents of the report are thoroughly protected from being disclosed.</li>
+                                            <li>We have a principle of taking strict disciplinary action in the case of a violation of the whistleblower protection regulations, such as recrimination and identity exposure.</li>
                                         </ul>
                                         <div class="download_wrap">
                                             <dl>
-                                                <dt>제보자 보호규정</dt>
-                                                <dd>제보자를 보호하기 위한 규정을 명문화하여 운영하고 있습니다. </dd>
+                                                <dt>Whistleblower protection regulations</dt>
+                                                <dd>We have stipulated in writing and operate regulations to protect whistleblowers.</dd>
                                             </dl>
-                                            <div class="btn_download"><a href="javascript:fnfileDownLoad(3,0,5);" download>파일 다운로드</a></div>
+                                            <div class="btn_download"><a href="javascript:fnfileDownLoad(3,0,5);" download>Downloads</a></div>
                                         </div>
                                     </div>
                                 </section>

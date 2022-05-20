@@ -5,7 +5,7 @@
     $(document).ready( function() {
         mainEvent.init();
         
-        setTimeout("location.reload()", 11000); // 약 10초후 화면이 새로고침이 됩니다.
+        // setTimeout("location.reload()", 11000); // 약 10초후 화면이 새로고침이 됩니다.
 
     });
 </script>
@@ -123,7 +123,7 @@
                             <div class="img"><img src="/resources/service/env/images/main/main_bus04.png" alt="자연순환 이미지"></div>
                             <div class="txt">
                                 <dl>
-                                    <dt>자연순환</dt>
+                                    <dt>자원순환</dt>
                                     <dd>
                                         환경시설관리주식회사는 버려지는 폐기물을 <br class="br_pc">
                                         감량화, 자원화, 에너지화 함으로써 자원을 재활용하고 <br class="br_pc">

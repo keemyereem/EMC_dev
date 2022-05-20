@@ -169,16 +169,32 @@ var commonEvent = {
             if ($(this).hasClass('on')) {
                 $('.header_wrap h1, .header_wrap .gnb').addClass('off');
                 $('.sitemap li p, .sitemap h2, .sitemap .depth_list').addClass('on');
-                $('.wrap').on('scroll touchmove mousewheel', function(event) {
-                    event.preventDefault();
-                    event.stopPropagation();
-                    return false;
-                });
+                if ($(window).width() > 767) {
+                    $('.wrap').on('scroll touchmove mousewheel', function(event) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                        return false;
+                    });
+                }
+                // $('.wrap').addClass('notScroll');
+                // $('.wrap').css({'overflow':'hidden', 'position': 'fixed'});
+                
+
+
             } else {
                 $('.header_wrap h1, .header_wrap .gnb').removeClass('off');
-                $('.sitemap li p, .sitemap h2, .sitemap .depth_list').removeClass('on');
-                $('.wrap').off('scroll touchmove mousewheel');
+                $('.sitemap li p, .sitemap h2, .sitemap .depth_list, .sitemap_wrap li').removeClass('on');
+                if ($(window).width() > 767) {
+                    $('.wrap').off('scroll touchmove mousewheel');
+                }
+                // $('.wrap').removeClass('notScroll');
+                // $('.wrap').css({'overflow':'', 'position': ''});
+                
             }
+        });
+        $(document).on('click', '.sitemap_wrap li', function(){
+            $(this).toggleClass('on');
+            $(this).siblings().removeClass('on');
         });
     },
     goTopEvent:function() {
@@ -239,11 +255,121 @@ var onmEvent = {
         var Tabs = $('.business_contents .section1 .nav_btn li');
         var Tabs_depth2 = $(".swiper_2depth_tabs p");
         
-        
-        $(".swiper").each(function(index, element){
 
+        $(".swiper").each(function(index){
+            // var add_depth_calc1 = index + (1);
+            // // 첫번째 슬라이드 2depth 스와이퍼 
+            // var swiper1_01 = new Swiper('.swiper1_01', {
+            //     observer: true,
+            //     observeParents: true,
+            //     slidesPerView : 2,
+            //     spaceBetween: 70,
+            //     speed: 700,
+                
+            //     navigation: {
+            //         nextEl: '.swiper-button-next01_01',
+            //         prevEl: '.swiper-button-prev01_01',
+            //     },
+            //     watchOverflow: true,
+
+            //     breakpoints: {
+        
+            //         768: {
+            //           slidesPerView: 1,  //브라우저가 768보다 클 때
+            //           spaceBetween: 20,
+            //         },
+            //         1024: {
+            //           slidesPerView: 2,  //브라우저가 1024보다 클 때
+            //           spaceBetween: 70,
+            //         },
+            //       },   
+            // });
+            // var swiper1_02 = new Swiper('.swiper1_02', {
+            //     observer: true,
+            //     observeParents: true,
+            //     slidesPerView : 2,
+            //     spaceBetween: 70,
+            //     speed: 700,
+                
+            //     navigation: {
+            //         nextEl: '.swiper-button-next01_01',
+            //         prevEl: '.swiper-button-prev01_01',
+            //     },
+            //     watchOverflow: true,
+
+            //     breakpoints: {
+        
+            //         768: {
+            //           slidesPerView: 1,  //브라우저가 768보다 클 때
+            //           spaceBetween: 20,
+            //         },
+            //         1024: {
+            //           slidesPerView: 2,  //브라우저가 1024보다 클 때
+            //           spaceBetween: 70,
+            //         },
+            //       },   
+            // });
+            // var swiper1_03 = new Swiper('.swiper1_03', {
+            //     observer: true,
+            //     observeParents: true,
+            //     slidesPerView : 2,
+            //     spaceBetween: 70,
+            //     speed: 700,
+                
+            //     navigation: {
+            //         nextEl: '.swiper-button-next01_01',
+            //         prevEl: '.swiper-button-prev01_01',
+            //     },
+            //     watchOverflow: true,
+
+            //     breakpoints: {
+        
+            //         768: {
+            //           slidesPerView: 1,  //브라우저가 768보다 클 때
+            //           spaceBetween: 20,
+            //         },
+            //         1024: {
+            //           slidesPerView: 2,  //브라우저가 1024보다 클 때
+            //           spaceBetween: 70,
+            //         },
+            //       },   
+            // });
+
+            // 탭 메뉴 슬라이드 스와이퍼
+            
+            //var $this = $(this);
+            //var add_depth_calc2 = index - (Tabs_depth2.length - 2);
+            //$this.addClass('swiper' + add_depth_calc2);
             // 첫번째 슬라이드 2depth 스와이퍼 
-            var swiper1 = new Swiper('.swiper1_0' + index, {
+
+        
+            var swiper = new Swiper('.swiper', {
+                observer: true,
+                observeParents: true,
+                slidesPerView : 2,
+                spaceBetween: 70,
+                speed: 700,
+                
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                watchOverflow: true,
+
+                breakpoints: {
+        
+                    768: {
+                      slidesPerView: 1,  //브라우저가 768보다 클 때
+                      spaceBetween: 20,
+                    },
+                    1024: {
+                      slidesPerView: 2,  //브라우저가 1024보다 클 때
+                      spaceBetween: 70,
+                    },
+                  },  
+            });
+
+            var swiper1 = new Swiper('.swiper1_box .swiper', {
                 observer: true,
                 observeParents: true,
                 slidesPerView : 2,
@@ -268,39 +394,11 @@ var onmEvent = {
                     },
                   },   
             });
-
-            // 탭 메뉴 슬라이드 스와이퍼
-            var $this = $(this);
-            $this.addClass('swiper' + index);
-
-            var swiper = new Swiper('.swiper' + index, {
-                observer: true,
-                observeParents: true,
-                slidesPerView : 2,
-                spaceBetween: 70,
-                speed: 700,
-                
-                navigation: {
-                    nextEl: '.swiper-button-next0' + index,
-                    prevEl: '.swiper-button-prev0' + index,
-                },
-                watchOverflow: true,
-
-                breakpoints: {
-        
-                    768: {
-                      slidesPerView: 1,  //브라우저가 768보다 클 때
-                      spaceBetween: 20,
-                    },
-                    1024: {
-                      slidesPerView: 2,  //브라우저가 1024보다 클 때
-                      spaceBetween: 70,
-                    },
-                  },  
-            });
             
             // 탭버튼 function
             Tabs.on("click", function() {
+                
+                console.log(index);
                 // 탭 버튼 CSS 액티브 효과
                 $(this).addClass('on');
                 $(this).siblings().removeClass('on');
@@ -313,7 +411,7 @@ var onmEvent = {
                 $('.box_text, .swiper, .swiper_2depth_tabs, .onm_box_slider_button').removeClass('aos-animate');
                 // 클릭요소의 슬라이드 컨테이너 출력
                 $('.section2 .box0' + Tabs_idx).addClass('on');
-                
+                $('.section2 .box0' + Tabs_idx + ' .swiper').addClass('swiper' + Tabs_idx);
                 // 첫번째 슬라이드 컨테이너 내부 2Depth 슬라이드 컨테이너 초기화(첫번째로)
                 $('.swiper1_box').hide();
                 $('.swiper1_box01').css({display:'block'});
@@ -326,6 +424,7 @@ var onmEvent = {
                     Tabs_depth2.removeClass('on');
                     Tabs_depth2.eq(0).addClass('on');
                     swiper1.slideTo(0, 0);
+                    
                 }, 0);
 
                 // 클릭요소의 하단 그리드형 리스트 출력
@@ -342,7 +441,7 @@ var onmEvent = {
                 // 클릭한 2depth 탭 버튼 인덱스 값 추출 및 같은 인덱스값의 슬라이드 컨테이너 추적
                 var idx = Tabs_depth2.index(this)+1;
                 var tab_slide = $(this).parent().siblings('.swiper1_box');
-                
+
                 // 2depth 탭 버튼 CSS 액티브 효과
                 Tabs_depth2.removeClass('on');
                 $(this).addClass('on');
@@ -654,16 +753,32 @@ var mainEvent = {
             if ($(this).hasClass('on')) {
                 $('.header_wrap h1, .header_wrap .gnb').addClass('off');
                 $('.sitemap li p, .sitemap h2, .sitemap .depth_list').addClass('on');
-                $('.wrap').on('scroll touchmove mousewheel', function(event) {
-                    event.preventDefault();
-                    event.stopPropagation();
-                    return false;
-                });
+                if ($(window).width() > 767) {
+                    $('.wrap').on('scroll touchmove mousewheel', function(event) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                        return false;
+                    });
+                }
+                // $('.wrap').addClass('notScroll');
+                // $('.wrap').css({'overflow':'hidden', 'position': 'fixed'});
+                
+
+
             } else {
                 $('.header_wrap h1, .header_wrap .gnb').removeClass('off');
-                $('.sitemap li p, .sitemap h2, .sitemap .depth_list').removeClass('on');
-                $('.wrap').off('scroll touchmove mousewheel');
+                $('.sitemap li p, .sitemap h2, .sitemap .depth_list, .sitemap_wrap li').removeClass('on');
+                if ($(window).width() > 767) {
+                    $('.wrap').off('scroll touchmove mousewheel');
+                }
+                // $('.wrap').removeClass('notScroll');
+                // $('.wrap').css({'overflow':'', 'position': ''});
+                
             }
+        });
+        $(document).on('click', '.sitemap_wrap li', function(){
+            $(this).toggleClass('on');
+            $(this).siblings().removeClass('on');
         });
     },
 

@@ -38,7 +38,7 @@
                         <div class="job_intro">
                             <section class="section1">
                                 <div class="s_title_img" data-aos="fade-up" data-aos-offset="400"><img src="/resources/service/env/images/recruit/job_intro_tit.png" alt="Job Introduction"></div>
-                                <h3 data-aos="fade-up" data-aos-offset="400">대표 직무 소개</h3>
+                                <h3 data-aos="fade-up" data-aos-offset="400">주요 직무 소개</h3>
                                 <p data-aos="fade-up" data-aos-offset="400">명확한 업무분담, 분야별 효율적인 업무수행</p>
                             </section>
                             <section class="section2">

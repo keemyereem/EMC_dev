@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>			
-			
+<script>
+    $(document).ready( function() {
+        rndEvent.init();
+    });
+</script>	
 			
 			<div class="sub_visual business_visual">
                 <div class="sub_visual_nav">
@@ -40,7 +44,7 @@
                                 <ul class="tab_list" data-aos="fade-up" data-aos-duration="600" data-aos-offset="200" data-aos-delay="600">
                                     <li class=""><a href="/sub.do?MENUID=02_02_0021&MENUNO=2">매립</a></li>
                                     <li class=""><a href="/sub.do?MENUID=02_02_0022&MENUNO=2">폐유</a></li>
-                                    <li class="on"><a href="/sub.do?MENUID=02_02_0023&MENUNO=2">폐수</a></li>
+                                    <li class="on focus"><a href="/sub.do?MENUID=02_02_0023&MENUNO=2">폐수</a></li>
                                 </ul>
                             </div>
                             <div class="circulation_wrap" data-aos="fade-up" data-aos-offset="400">

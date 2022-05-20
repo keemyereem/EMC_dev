@@ -27,114 +27,116 @@
                     <div class="icon" data-aos="fade-up">
                         <img src="/resources/service/env/images/sustain/sustain_tit_icon.png" alt="타이틀 아이콘">
                     </div>
-                    <h3 class="title" data-aos="fade-up" data-aos-offset="200">윤리경영</h3>
+                    <h3 class="title" data-aos="fade-up" data-aos-offset="200">Ethical Management</h3>
                     <div class="tit_line"></div>
 
                     <div class="sub_contents ethic_contents">
                         <div class="inner">
                             <div class="top">
                                 <ul class="tab_list" data-aos="fade-up" data-aos-duration="600" data-aos-offset="200" data-aos-delay="500">
-                                    <li class="on"><a href="/en/sub.do?MENUID=ethical_management&MENUNO=3">윤리경영 소개</a></li>
-                                    <li class=""><a href="/en/sub.do?MENUID=tip_off&MENUNO=3">상담/제보</a></li>
+                                    <li class="on"><a href="/en/sub.do?MENUID=ethical_management&MENUNO=3">Introduction to Ethical Management</a></li>
+                                    <li class=""><a href="/en/sub.do?MENUID=tip_off&MENUNO=3">Consulting/Reports</a></li>
                                 </ul>
                             </div>
                             <div class="ethic_wrap ethical_intro_wrap">
                                 <section class="section1" data-aos="fade-up" data-aos-duration="700" data-aos-delay="600">
                                     <div class="s_title_img"><img src="/resources/service/env/images/sustain/ethical_manage_tit.png" alt="Ethical Management"></div>
-                                    <h3>윤리경영이란?</h3>
+                                    <h3>What is ethical management?</h3>
                                     <div class="ethical_intro_banner">
                                         <p>
-                                            “요령을 피우지 않는 경영”, “멀리보고 큰 이익을 추구하는 경영”으로 
-                                            우리 EMC는 투명한 경영활동과 사회적 책임을 다함으로써
-                                            고객, 구성원, 협력회사, 주주 등의 이해관계자에게 존경받는
-                                            기업이 되고자 노력하고 있습니다. 
+                                            With the philosophy of “management that does not take shortcuts” and “management 
+                                            that seeks a big profit by looking far ahead,” we are striving to become a company that is respected by our stakeholders 
+                                            such as customers, employees, business partners, and stockholders 
+                                            by fulfilling our commitment to transparent business activities and social responsibility.
                                         </p>
                                     </div>
                                 </section>
                                 <section class="section2" data-aos="fade-up" data-aos-duration="700" data-aos-offset="400">
-                                    <p class="s_tit">윤리경영 운영체계</p>
+                                    <p class="s_tit">Ethical Management System</p>
                                     <div class="s_con">
                                         <ul>
                                             <li>
                                                 <div class="icon_box">
                                                     <div class="icon"></div>
-                                                    <p>전담조직</p>
+                                                    <p>Dedicated organization</p>
                                                 </div>
                                                 <div class="line"></div>
                                                 <ul class="txt_box">
-                                                    <li>· 인사위원회</li>
-                                                    <li>· ESG실 윤리경영담당</li>
+                                                    <li>· Personnel committee</li>
+                                                    <li>· ESG officer for ethical management</li>
                                                 </ul>
                                             </li>
                                             <li>
                                                 <div class="icon_box">
                                                     <div class="icon"></div>
-                                                    <p>윤리규범</p>
+                                                    <p>Code of ethics</p>
                                                 </div>
                                                 <div class="line"></div>
                                                 <ul class="txt_box">
-                                                    <li>· 윤리규정, 윤리규정 실천 가이드</li>
-                                                    <li>· 내부감사규정, 제보자보호규정</li>
-                                                    <li>· 윤리경영 준수 Message</li>
+                                                    <li>· Rules of ethics, practical guidelines for the rules of ethics</li>
+                                                    <li>· Internal audit regulations, whistleblower protection regulations</li>
+                                                    <li>· Ethical management compliance message</li>
                                                 </ul>
                                             </li>
                                             <li>
                                                 <div class="icon_box">
                                                     <div class="icon"></div>
-                                                    <p>실천제도</p>
+                                                    <p>Implementation system</p>
                                                 </div>
                                                 <div class="line"></div>
                                                 <ul class="txt_box">
-                                                    <li>· 윤리경영 교육</li>
-                                                    <li>· 윤리규정 실천 서약</li>
-                                                    <li>· 비윤리 상담/제보/조사</li>
+                                                    <li>· Ethical management education</li>
+                                                    <li>· Pledge of the rules of ethics in practice</li>
+                                                    <li>· Unethical conduct counseling/reporting/investigation</li>
                                                 </ul>
                                             </li>
                                         </ul>
                                     </div>
                                 </section>
                                 <section class="section3" data-aos="fade-up" data-aos-duration="700" data-aos-offset="400">
-                                    <p class="s_tit">행동기준</p>
+                                    <p class="s_tit">Code</p>
                                     <div class="s_con">
                                         <p>
-                                            EMC는  윤리경영 실천을 위해 윤리규정, 내부 감사규정 및 제보자 보호규정을 운영하고 있으며
-                                            구성들이 일상 업무 時 쉽게 활용할 수 있도록 윤리경영 실천가이드를 제공하고 있습니다.                                             
+                                            To practice ethical management, we operate according to ethics regulations, internal audit regulations, and whistleblower protection regulations, 
+                                            and we provides practical guidelines for ethical management so that our member can easily use them in their daily work.                                         
                                         </p>
-                                        <p>EMC 구성원 모두는</p>
+                                        <p>All EMC members will: </p>
                                         <ol>
-                                            <li>합법성, 투명성, 합리성의 기본 원칙을 준수하여 업무를 수행하고</li>
-                                            <li>공정성을 저해하는 일체의 불법적, 비윤리적 이익과 청탁을 배제한 건강한 기업문화를 조성하며,</li>
-                                            <li>공정한 기회를 부여하고 우월적 지위를 이용한 부당한 요구를 하지 않으며,</li>
-                                            <li> 배려와 존중을 통한 동반성장 및 협력관계를 구축하겠습니다</li>
+                                            <li>Conduct their business activities in compliance with the basic principles of legality, transparency, and rationality; </li>
+                                            <li>Create a healthy corporate culture that excludes all illegal and unethical interests, and any solicitations that impede fairness </li>
+                                            <li>Grant fair opportunities and not make unreasonable demands using a superior position</li>
+                                            <li>Build mutual growth and cooperative relationships through consideration and respect
+                                                Rules of the ethics compliance Message
+                                            </li>
                                         </ol>
                                         <div class="download_wrap">
                                             <div>
                                                 <dl>
-                                                    <dt>윤리규정 준수 Message</dt>
-                                                    <dd>이해관계자의 행복을 위한 가치창출 활동의 근간이며 , 구성원이 준수해야 할 필수 규범입니다. </dd>
+                                                    <dt>Rules of ethics compliance message</dt>
+                                                    <dd>As the basis of value creation activities for the happiness of our stakeholders, this is an essential norm that all members of EMC must abide by.</dd>
                                                 </dl>
-                                                <div class="btn_download"><a href="javascript:fnfileDownLoad(3,0,1);" download>파일 다운로드 </a></div>
+                                                <div class="btn_download"><a href="javascript:fnfileDownLoad(3,0,1);" download>Downloads</a></div>
                                             </div>
                                             <div>
                                                 <dl>
-                                                    <dt>윤리규정 </dt>
-                                                    <dd>구성원, 고객, 협력업체 등 모든 이해관계자와의 윤리경영을 명문화한 규정입니다.  </dd>
+                                                    <dt>Rules of ethics</dt>
+                                                    <dd>This regulation stipulates the ethical management practices with all stakeholders, including our members, customers, and business partners. </dd>
                                                 </dl>
-                                                <div class="btn_download"><a href="javascript:fnfileDownLoad(3,0,2);" download>파일 다운로드 </a></div>
+                                                <div class="btn_download"><a href="javascript:fnfileDownLoad(3,0,2);" download>Downloads</a></div>
                                             </div>
                                             <div>
                                                 <dl>
-                                                    <dt>윤리경영 실천가이드 </dt>
-                                                    <dd>윤리경영 실천을 위해 구성원의 일상 업무 時 활용할 수 있도록 지침을 제시하고 있습니다. </dd>
+                                                    <dt>Practical guidelines for ethical management</dt>
+                                                    <dd>We provide guidelines for our members to use in their daily work. for the practice of ethical management.  </dd>
                                                 </dl>
-                                                <div class="btn_download"><a href="javascript:fnfileDownLoad(3,0,3);" download>파일 다운로드 </a></div>
+                                                <div class="btn_download"><a href="javascript:fnfileDownLoad(3,0,3);" download>Downloads</a></div>
                                             </div>
                                             <div>
                                                 <dl>
-                                                    <dt>내부감사규정</dt>
-                                                    <dd>내부감사를 실시하여 개인의 비윤리행위를 항시 점검하고 있습니다. </dd>
+                                                    <dt>Internal audit regulations</dt>
+                                                    <dd>We conduct internal audits to check for individuals’ unethical behavior at all times.</dd>
                                                 </dl>
-                                                <div class="btn_download"><a href="javascript:fnfileDownLoad(3,0,4);" download>파일 다운로드 </a></div>
+                                                <div class="btn_download"><a href="javascript:fnfileDownLoad(3,0,4);" download>Downloads</a></div>
                                             </div>
                                         </div>
                                     </div>

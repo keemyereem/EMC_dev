@@ -43,9 +43,12 @@
                     <div class="sub_contents personnel_contents">
                         <div class="inner">
                             <section class="section1">
-                                <div class="s_title_img" data-aos="fade-up" data-aos-offset="400"><img src="/resources/service/env/images/recruit/reward_system_tit.png" alt="Job Introduction"></div>
+                                <div class="s_title_img" data-aos="fade-up" data-aos-offset="400">
+                                    <img src="/resources/service/env/images/recruit/reward_system_tit.png" alt="Job Introduction">
+                                    <img src="/resources/service/env/images/recruit/reward_system_tit_m.png" alt="Job Introduction">
+                                </div>
                                 <h3 data-aos="fade-up" data-aos-offset="400">EMC 포상제도</h3>
-                                <ul>
+                                <ul data-aos="fade-up" data-aos-offset="400">
                                     <li class="reward_sys01">
                                         <div class="hov_wrap">
                                             <div class="tit">장기근속 포상</div>
@@ -85,9 +88,12 @@
                                 </ul>
                             </section>
                             <section class="section2">
-                                <div class="s_title_img" data-aos="fade-up" data-aos-offset="400"><img src="/resources/service/env/images/recruit/welfare_benefits_tit.png" alt="Job Introduction"></div>
+                                <div class="s_title_img" data-aos="fade-up" data-aos-offset="400">
+                                    <img src="/resources/service/env/images/recruit/welfare_benefits_tit.png" alt="welfare benefits">
+                                    <img src="/resources/service/env/images/recruit/welfare_benefits_tit_m.png" alt="welfare benefits">
+                                </div>
                                 <h3 data-aos="fade-up" data-aos-offset="400">복리후생제도</h3>
-                                <ul>
+                                <ul data-aos="fade-up" data-aos-offset="400">
                                     <li class="welfare_benifits01">
                                         <div class="icon"></div>
                                         <div class="tit">자녀학자금 지원</div>
@@ -154,13 +160,16 @@
                                 </ul>
                             </section>
                             <section class="section3">
-                                <div class="s_title_img" data-aos="fade-up" data-aos-offset="400"><img src="/resources/service/env/images/recruit/educational_benefits_tit.png" alt="Job Introduction"></div>
+                                <div class="s_title_img" data-aos="fade-up" data-aos-offset="400">
+                                    <img src="/resources/service/env/images/recruit/educational_benefits_tit.png" alt="Educational benefits">
+                                    <img src="/resources/service/env/images/recruit/educational_benefits_tit_m.png" alt="Educational benefits">
+                                </div>
                                 <h3 data-aos="fade-up" data-aos-offset="400">교육제도</h3>
                                 <p data-aos="fade-up" data-aos-offset="400">
                                     Global 환경 플랫폼 기업으로의 도약을 위한<br>
                                     '현장의 전문화된 기술력' + 단계별 역량 검증을 통한 Professional  인재 육성
                                 </p>
-                                <div class="edu_wrap">
+                                <div class="edu_wrap" data-aos="fade-up" data-aos-offset="400">
                                     <div class="edu_benifits01">
                                         <div class="tit">입문과정</div>
                                         <ul>
