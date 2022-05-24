@@ -2,6 +2,7 @@
 <div class="footer_wrap">
     <div class="footer_menu">
         <div class="menu_top">
+            <a href="javascript:;">이용약관</a>
             <a href="/sub.do?MENUID=privacy_statement" class="privacy_policy">개인정보취급방침</a>
             <a href="javascript:link(1,4);">찾아오시는 길</a>
             <a href="https://ethics.sk.co.kr" target="_blank" class="speakup">상담/제보</a>

@@ -245,11 +245,13 @@
 .cont_invest.fc_info .sub_con .inner { max-width: none;}
 .cont_invest.fc_info .tb_top .nav_btn { display: flex; justify-content: center; border-bottom: 1px solid #eeeeee; }
 .cont_invest.fc_info .tb_top .nav_btn li { width: 50%; text-align: center; /* line-height: 5rem; */ font-size: 1.6rem; position: relative; display: table;}
+.cont_invest.fc_info .tb_top .nav_btn li.on { background: #568236; border-radius: 0 2rem 0 0; }
 .cont_invest.fc_info .tb_top .nav_btn li:after { content:''; display: block; width: 0; height: 0.3rem; background:#568236; transition:all ease-in-out .5s; position: absolute; left: 0; bottom: 0; }
 .cont_invest.fc_info .tb_top .nav_btn li.on:after { width: 100%; }
 .cont_invest.fc_info .tb_top .nav_btn li:hover:after { width: 100%;}
-.cont_invest.fc_info .tb_top .nav_btn li a { /* display: block; */display: table-cell;padding: 0 0 2.6rem 0;vertical-align: middle; }
-.cont_invest.fc_info .tb_top .nav_btn li.on a { color: #568236; font-weight: 400; }
+.cont_invest.fc_info .tb_top .nav_btn li a { /* display: block; */display: table-cell;padding: 1.5rem 0;vertical-align: middle; }
+.cont_invest.fc_info .tb_top .nav_btn li.on a { color: #fff; font-weight: 400; }
+.cont_invest.fc_info .tb_top .nav_btn li.on a:hover { color: #fff; }
 .cont_invest.fc_info .tb_top .nav_btn li:hover a { color: #568236; font-weight: 400; }
 
 .cont_invest.fc_info .tb_box {position: relative; margin-top: 6.1rem; font-family: 'NS';}
@@ -293,7 +295,7 @@
 
 
 /* 사업소개 - 수처리 - O&M */
-.container .cont_business .onm_inner {padding: 12rem 0 0 0;}
+.container .cont_business .onm_inner {padding: 8rem 0 0 0;}
 .cont_business .contents_inner .business_contents .inner {width: 100%;max-width: 144rem;}
 .business_contents .section1 .sub_con {font-family: 'NS';font-size: 2.6rem;color: #222;text-align: center;line-height: 4.6rem;letter-spacing: -.065rem;position:relative; top:100px; opacity: 0; transition: all ease-in-out .6s; }
 .business_contents .section1 .sub_con.on { top:0; opacity: 1; }
@@ -426,9 +428,11 @@
 .cont_business .rnd_contents .tab_list ul li { width: 25%; text-align: center; /* line-height: 5rem; */ font-size: 1.6rem; position: relative; display: table;}
 .cont_business .rnd_contents .tab_list ul li:after { content:''; display: block; width: 0; height: 0.3rem; background:#568236; transition:all ease-in-out .5s; position: absolute; left: 0; bottom: 0; }
 .cont_business .rnd_contents .tab_list ul li.on:after { width: 100%; }
+.cont_business .rnd_contents .tab_list ul li.on { background: #568236; border-radius: 0 2rem 0 0; }
+.cont_business .rnd_contents .tab_list ul li.on:hover a { color: #fff; }
 .cont_business .rnd_contents .tab_list ul li:hover:after { width: 100%;}
-.cont_business .rnd_contents .tab_list ul li a { /* display: block; */display: table-cell;padding: 0 0 2.6rem 0;vertical-align: middle; }
-.cont_business .rnd_contents .tab_list ul li.on a { color: #568236; font-weight: 400; }
+.cont_business .rnd_contents .tab_list ul li a { /* display: block; */display: table-cell; /* padding: 0 0 2.6rem 0; */ padding: 1.5rem 0; vertical-align: middle; }
+.cont_business .rnd_contents .tab_list ul li.on a { color: #fff; font-weight: 400; }
 .cont_business .rnd_contents .tab_list ul li:hover a { color: #568236; font-weight: 400; }
 
 .cont_business .rnd_contents .nav_btn {height: 24rem;display: flex;justify-content: center;letter-spacing: -.04rem;margin: 8rem auto 12rem;}
@@ -657,8 +661,10 @@
 .cont_business .top .tab_list li:after { content:''; display: block; width: 0; height: 0.3rem; background:#568236; transition:all ease-in-out .5s; position: absolute; left: 0; bottom: 0; }
 .cont_business .top .tab_list li.on:after { width: 100%; }
 .cont_business .top .tab_list li:hover:after { width: 100%;}
-.cont_business .top .tab_list li a { display: table-cell;padding: 0 0 2.6rem 0; }
-.cont_business .top .tab_list li.on a { color: #568236; font-weight: 400; }
+.cont_business .top .tab_list li a { display: table-cell;padding: 1.5rem 0; }
+.cont_business .top .tab_list li.on a { color: #fff; font-weight: 400; }
+.cont_business .top .tab_list li.on:hover a { color: #fff; }
+.cont_business .top .tab_list li.on { background: #568236; border-radius: 0 2rem 0 0; }
 .cont_business .top .tab_list li:hover a { color: #568236; font-weight: 400; }
 
 .green_contents .circulation_wrap .swiper-container {width: 100%;max-width: 120rem;position: relative;}
@@ -718,8 +724,10 @@
 .cont_sustain .top .tab_list li:after { content:''; display: block; width: 0; height: 0.3rem; background:#568236; transition:all ease-in-out .5s; position: absolute; left: 0; bottom: 0; }
 .cont_sustain .top .tab_list li.on:after { width: 100%; }
 .cont_sustain .top .tab_list li:hover:after { width: 100%;}
-.cont_sustain .top .tab_list li a { /* display: block; */display: table-cell; padding: 0 0 2.6rem 0;vertical-align: middle; }
-.cont_sustain .top .tab_list li.on a { color: #568236; font-weight: 400; }
+.cont_sustain .top .tab_list li a { /* display: block; */display: table-cell; padding:1.5rem 0;vertical-align: middle; }
+.cont_sustain .top .tab_list li.on:hover a { color: #fff; }
+.cont_sustain .top .tab_list li.on { background: #568236; border-radius: 0 2rem 0 0; }
+.cont_sustain .top .tab_list li.on a { color: #fff; font-weight: 400; }
 .cont_sustain .top .tab_list li:hover a { color: #568236; font-weight: 400; }
 
 .cont_sustain .ethic_wrap {margin-top: 8rem;}
@@ -797,11 +805,13 @@
 .cont_sustain .sub_con.on { opacity: 1; top: 0; }
 .cont_sustain .tb_top .nav_btn { display: flex; justify-content: center; border-bottom: 1px solid #eeeeee; }
 .cont_sustain .tb_top .nav_btn li { width: 50%; text-align: center; /* line-height: 5rem; */ font-size: 1.6rem; position: relative; display: table;}
+.cont_sustain .tb_top .nav_btn li.on { background: #568236; border-radius: 0 2rem 0 0; }
 .cont_sustain .tb_top .nav_btn li:after { content:''; display: block; width: 0; height: 0.3rem; background:#568236; transition:all ease-in-out .5s; position: absolute; left: 0; bottom: 0; }
 .cont_sustain .tb_top .nav_btn li.on:after { width: 100%; }
 .cont_sustain .tb_top .nav_btn li:hover:after { width: 100%; }
-.cont_sustain .tb_top .nav_btn li a { /* display: block; */display: table-cell; padding: 0 0 2.6rem 0;vertical-align: middle; }
-.cont_sustain .tb_top .nav_btn li.on a { color: #568236; font-weight: 400; }
+.cont_sustain .tb_top .nav_btn li a { /* display: block; */display: table-cell; padding: 1.5rem 0;vertical-align: middle; }
+.cont_sustain .tb_top .nav_btn li.on a { color: #fff; font-weight: 400; }
+.cont_sustain .tb_top .nav_btn li.on:hover a { color: #fff; }
 .cont_sustain .tb_top .nav_btn li:hover a { color: #568236; font-weight: 400; }
 .cont_sustain .sub_con .inner section .shm_sub_tit { width: 28rem; }
 .cont_sustain .sub_con .inner section .shm_sub_tit p { display: inline; font-size: 2.6rem; line-height: 1.8; font-weight: 400; color: #222; }
@@ -961,13 +971,13 @@
 .cont_sustain .SC_sub_con .inner .section1 .sc_obj > div .sc_obj_box li .sc_obj_box_inner div:first-child span { position: absolute; color:#568236; font-size: 2.2rem; left: 1.3rem; bottom:1rem; }
 .cont_sustain .SC_sub_con .inner .section1 .sc_obj > div .sc_obj_box li .sc_obj_box_inner div:last-child { font-size: 1.6rem; line-height: 2.8rem; margin-top: 2rem; }
 .cont_sustain .SC_sub_con .inner .section2 { padding-bottom: 12rem; }
-.cont_sustain .SC_sub_con .inner .section2 .sc_obj { margin-top: 6rem; border: 1px solid #e5e5e5;  border-top: 1px solid #42602c; }
+.cont_sustain .SC_sub_con .inner .section2 .sc_obj { margin-top: 6rem; border-left: 1px solid #e5e5e5; border-right: 1px solid #e5e5e5;  border-top: 1px solid #42602c; }
 .cont_sustain .SC_sub_con .inner .section2 .sc_obj ul { display: flex; flex-wrap: wrap;}
 .cont_sustain .SC_sub_con .inner .section2 .sc_obj ul li { width: 50%; display: flex; padding: 6rem; border-bottom: 1px solid #e5e5e5; }
 .cont_sustain .SC_sub_con .inner .section2 .sc_obj ul li p:first-child img  { box-shadow: 11px 13px 32.34px 0.66px rgba(24, 24, 24, 0.3); }
 .cont_sustain .SC_sub_con .inner .section2 .sc_obj ul li p:last-child { padding-left: 5.4rem; font-size: 1.6rem; line-height: 1.8; color: #777; font-weight: 200; }
 .cont_sustain .SC_sub_con .inner .section2 .sc_obj ul li p:last-child span { font-size: 2.2rem; color: #222; line-height: 1.5; font-weight: 400; padding-bottom: 2rem; display: block; }
-.cont_sustain .SC_sub_con .inner .section2 .sc_obj ul li:last-child { width: 100%; border-bottom:none; align-items: center; }
+.cont_sustain .SC_sub_con .inner .section2 .sc_obj ul li:last-child { width: 100%; border-bottom:none; align-items: center; display: none; }
 .cont_sustain .SC_sub_con .inner .section2 .sc_obj ul li:last-child p:last-child { padding-top: none; }
 .cont_sustain .SC_sub_con .inner .section2 .sc_obj ul li:nth-child(even) { border-left: 1px solid #e5e5e5; }
 .cont_sustain .SC_sub_con .inner .section2 .sc_obj ul li:nth-child(-n+2) p:last-child { padding-top: 5.5rem; }
@@ -1065,12 +1075,14 @@
 .cont_recruit .recruit_contents.on { opacity: 1;}
 .cont_recruit .recruit_contents .inner { max-width: 120rem; }
 .cont_recruit .recruit_contents .tab_list .nav_btn { display: flex; justify-content: center; border-bottom: 1px solid #eeeeee;margin:0; }
+.cont_recruit .recruit_contents .tab_list .nav_btn li.on { background: #568236; border-radius: 0 2rem 0 0; }
 .cont_recruit .recruit_contents .tab_list .nav_btn li { width: 25%; text-align: center; /* line-height: 5rem; */ font-size: 1.6rem; position: relative;display: table;}
 .cont_recruit .recruit_contents .tab_list .nav_btn li:after { content:''; display: block; width: 0; height: 0.3rem; background:#568236; transition:all ease-in-out .5s; position: absolute; left: 0; bottom: 0; }
 .cont_recruit .recruit_contents .tab_list .nav_btn li.on:after { width: 100%; }
 .cont_recruit .recruit_contents .tab_list .nav_btn li:hover:after { width: 100%;}
-.cont_recruit .recruit_contents .tab_list .nav_btn li a { /* display: block; */display: table-cell;padding: 0 0 2.6rem 0;vertical-align: middle; }
-.cont_recruit .recruit_contents .tab_list .nav_btn li.on a { color: #568236; font-weight: 400; }
+.cont_recruit .recruit_contents .tab_list .nav_btn li a { /* display: block; */display: table-cell;padding: 1.5rem 0;vertical-align: middle; }
+.cont_recruit .recruit_contents .tab_list .nav_btn li.on a { color: #fff; font-weight: 400; }
+.cont_recruit .recruit_contents .tab_list .nav_btn li.on:hover a { color: #fff; }
 .cont_recruit .recruit_contents .tab_list .nav_btn li:hover a { color: #568236; font-weight: 400; }
 
 .cont_recruit .recruit_contents .tb_top {position: relative;margin-top: 10rem;}

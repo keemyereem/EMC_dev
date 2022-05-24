@@ -49,7 +49,7 @@
                     <div class="business_contents rnd_contents sub_con">
 
                         <div class="tab_list">
-                            <ul data-aos="fade-up" data-aos-duration="600" data-aos-offset="200">
+                            <ul data-aos="fade-up" data-aos-duration="600">
                                 <li class=""><a href="/sub.do?MENUID=02_01_0031&MENUNO=2">지적재산권</a></li>
                                 <li class=""><a href="/sub.do?MENUID=02_01_0032&MENUNO=2">정도관리</a></li>
                                 <li class=""><a href="/sub.do?MENUID=02_01_0033&MENUNO=2">공법</a></li>

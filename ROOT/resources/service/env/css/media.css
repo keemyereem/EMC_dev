@@ -434,7 +434,7 @@
     .cont_business .rnd_contents .tab_list ul { width: fit-content; }
     .cont_business .rnd_contents .tab_list ul li { width: 17.8rem; font-size: 1.4rem; }
     .cont_business .rnd_contents .tab_list ul li:after { height: 0.2rem; }
-    .cont_business .rnd_contents .tab_list ul li a { padding: 0 0 1.5rem 0; }
+    .cont_business .rnd_contents .tab_list ul li a { /* padding: 0 0 1.5rem 0; */ padding: 1rem 0; }
     .cont_business .rnd_contents .nav_btn_wrap { overflow: scroll; width: calc(100% + 4rem); margin-left: -2rem; padding: 6.45rem 2rem 1rem; margin-bottom: 5.45rem; }
     .cont_business .rnd_contents .nav_btn {height: 14rem; width: fit-content; margin: 0 auto; }
     .cont_business .rnd_contents .nav_btn li {width: 11.2rem; height: 100%; border: .05rem solid #eee;}
@@ -660,7 +660,7 @@
     .cont_business .top .tab_list { width: fit-content; }
     .cont_business .top .tab_list li { width: 17.8rem; font-size: 1.4rem; }
     .cont_business .top .tab_list li:after { height: 0.2rem; }
-    .cont_business .top .tab_list li a { padding: 0 0 1.5rem 0; }
+    .cont_business .top .tab_list li a { padding: 1rem 0; }
     .green_contents .circulation_wrap {padding-bottom: 0;font-family: 'NS';}
     .green_contents .circulation_wrap .s_tit {font-size: 1.8rem;padding: 3.5rem 0 5rem;letter-spacing: -.045rem;}
     .green_contents .circulation_wrap .img {width: auto;height: auto;}
@@ -693,7 +693,7 @@
     /* 지속가능경영 - 윤리경영 공통 */
     .cont_sustain .ethic_contents .inner {max-width: 100%;padding: 0 2rem;}
     .cont_sustain .top .tab_list li {font-size: 1.4rem;}
-    .cont_sustain .top .tab_list li a {padding: 0 0 1.5rem 0;}
+    .cont_sustain .top .tab_list li a {padding:1rem 0;}
     .cont_sustain .ethic_wrap {margin-top: 4rem;}
     .cont_sustain .ethic_wrap .section2, .cont_sustain .ethic_wrap .section3 {flex-direction: column;max-width: 100%;}
     .cont_sustain .ethic_wrap section .s_tit {font-size: 1.7rem;width: auto;}
@@ -758,7 +758,7 @@
     .cont_sustain .contents_inner {max-width: 100%;}
     .cont_sustain .sub_con .inner {padding: 0 2rem;}
     .cont_sustain .tb_top .nav_btn li {font-size: 1.4rem;}
-    .cont_sustain .tb_top .nav_btn li a {padding: 0 0 1.5rem 0;}
+    .cont_sustain .tb_top .nav_btn li a {padding: 1rem 0;}
     .cont_sustain .sub_con .inner section .shm_sub_tit {width: auto;}
     .cont_sustain .sub_con .inner section .shm_sub_tit p {font-size: 1.7rem; line-height: normal;}
     .cont_sustain .sub_con .inner section:not(.section1)  { margin: 0;flex-direction: column; }
@@ -937,6 +937,7 @@
     /* .cont_sustain .SC_sub_con .inner .section2 .sc_desc p:first-child > img {width: 9.2rem;} */
     .cont_sustain .SC_sub_con .inner .section2 .sc_obj {margin-top: 4rem;}
     .cont_sustain .SC_sub_con .inner .section2 .sc_obj ul li { width: 100%; padding: 3rem 0;align-items: center; }
+    .cont_sustain .SC_sub_con .inner .section2 .sc_obj ul li:nth-child(even) { border-left:none; }
     .cont_sustain .SC_sub_con .inner .section2 .sc_obj ul li p {width: 50%;position: relative;}
     .cont_sustain .SC_sub_con .inner .section2 .sc_obj ul li p:first-child {padding: 0 1.7rem 0 1.9rem;height: 13rem; }
     .cont_sustain .SC_sub_con .inner .section2 .sc_obj ul li p:first-child img {box-shadow: 6px 7px 16.17px 0.33px rgba(24, 24, 24, 0.3);width: calc(100% - 3.6rem);object-fit: contain;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}
@@ -1038,7 +1039,7 @@
 
     /* 투자정보 - 재무정보 - 재무상태표,손익계산서 220510 */
     .cont_invest.fc_info .tb_top .nav_btn li {font-size: 1.4rem;}
-    .cont_invest.fc_info .tb_top .nav_btn li a {padding: 0 0 1.5rem 0;}
+    .cont_invest.fc_info .tb_top .nav_btn li a {padding: 1rem 0;}
     .cont_invest.fc_info .tb_box {margin-top: 1.5rem;border-top: 0;}
     .cont_invest.fc_info .tb_box p {font-size: 1.2rem;padding: 0 0 1.5rem 0;}
     .cont_invest.fc_info .tb_box p:last-child {font-size: 1.2rem;padding: 1.5rem 0 0 0;}
@@ -1116,7 +1117,7 @@
     .cont_recruit .recruit_contents .tab_list {overflow-x: auto; padding:0 1rem .6rem;}
     .cont_recruit .recruit_contents .tab_list .nav_btn {width: fit-content;}
     .cont_recruit .recruit_contents .tab_list .nav_btn li {font-size: 1.4rem; width: 17.8rem;}
-    .cont_recruit .recruit_contents .tab_list .nav_btn li a {padding: 0 0 1.5rem 0;}
+    .cont_recruit .recruit_contents .tab_list .nav_btn li a {padding: 1rem 0;}
 
     .cont_recruit .recruit_contents .tb_top {margin-top: 5rem;}
     .cont_recruit .recruit_contents .tb_top .total {float: inherit;padding-top: 3rem;font-size: 1.3rem;font-weight: 100;}

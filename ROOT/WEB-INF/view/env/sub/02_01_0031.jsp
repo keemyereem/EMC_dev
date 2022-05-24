@@ -48,8 +48,8 @@
                     <div class="rnd_contents sub_contents" data-aos="fade-up" data-aos-delay="500">
 
                         <div class="tab_list">
-                            <ul data-aos="fade-up" data-aos-duration="600" data-aos-offset="200">
-                                <li class="on"><a href="javascript:;">지적재산권</a></li>
+                            <ul data-aos="fade-up" data-aos-duration="600">
+                                <li class="on focus"><a href="javascript:;">지적재산권</a></li>
                                 <li class=""><a href="/sub.do?MENUID=02_01_0032&MENUNO=2">정도관리</a></li>
                                 <li class=""><a href="/sub.do?MENUID=02_01_0033&MENUNO=2">공법</a></li>
                                 <li class=""><a href="/sub.do?MENUID=02_01_0034&MENUNO=2">기술지원</a></li>

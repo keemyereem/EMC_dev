@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>			
 <script>
         $(document).ready( function() {
+            rndEvent.init();
         	methodEvent.init();
         });
     </script>			
@@ -36,10 +37,10 @@
 
                     <div class="sub_contents skills_contents rnd_contents">
                         <div class="tab_list">
-                            <ul data-aos="fade-up" data-aos-duration="600" data-aos-offset="200" data-aos-delay="600">
+                            <ul data-aos="fade-up" data-aos-duration="600">
                                 <li class=""><a href="/sub.do?MENUID=02_01_0031&MENUNO=2">지적재산권</a></li>
                                 <li class=""><a href="/sub.do?MENUID=02_01_0032&MENUNO=2">정도관리</a></li>
-                                <li class="on"><a href="/sub.do?MENUID=02_01_0033&MENUNO=2">공법</a></li>
+                                <li class="on focus"><a href="/sub.do?MENUID=02_01_0033&MENUNO=2">공법</a></li>
                                 <li class=""><a href="/sub.do?MENUID=02_01_0034&MENUNO=2">기술지원</a></li>                                
                             </ul>
                         </div>

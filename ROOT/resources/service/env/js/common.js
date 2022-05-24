@@ -15,33 +15,33 @@ $(function(){
         startEvent: "load"
     });
 
-    // 사이트맵 내용 지정 
+    // 사이트맵 내용 지정
     const aos_order3 = document.querySelector('.sitemap');
 
     // 사이트맵 출력 후 메뉴 나타나게 하는 모션 효과
     aos_order3.addEventListener('transitionend', () => {
         $(this).find('li p, h2, .depth_list').addClass('on');
-        if ($(aos_order3).hasClass('on') ==! true) { 
+        if ($(aos_order3).hasClass('on') ==! true) {
             $(aos_order3).find('li p, h2, .depth_list').removeClass('on');
-        } 
+        }
     });
 
     // 메인페이지/ 서브페이지 구분 스크립트
-    if(location.pathname.indexOf('/index.do') > -1 || location.pathname.indexOf('/en/index.do') > -1){ 
+    if(location.pathname.indexOf('/index.do') > -1 || location.pathname.indexOf('/en/index.do') > -1){
 
     } else {
         commonEvent.init();
 
-        // 페이지 타이틀, 라인 내용 지정 
+        // 페이지 타이틀, 라인 내용 지정
         const aos_order1 = document.querySelector('.title');
         const aos_order2 = document.querySelector('.tit_line');
 
-        // 페이지 타이틀, 라인, 설명 각각 모션효과 종료될 때 다음 모션 진행하도록 
+        // 페이지 타이틀, 라인, 설명 각각 모션효과 종료될 때 다음 모션 진행하도록
         aos_order1.addEventListener('transitionend', () => {
             $(aos_order2).addClass('on');
             aos_order2.addEventListener('transitionend', () => {
                 $('.sub_con').addClass('on');
-            });  
+            });
         });
     }
 
@@ -57,7 +57,7 @@ $(window).on("resize", function() {
 
 });
 
-// Responsive Image 
+// Responsive Image
 function responsiveImage(w) {
     var src = "src-pc";
     if (w <= 650) src = "src-mobile";
@@ -70,7 +70,7 @@ function responsiveImage(w) {
         obj = img.eq(i);
         if (obj.data(src)) obj.attr('src', obj.data(src));
     }
-    
+
 
 }
 
@@ -89,8 +89,8 @@ var commonEvent = {
         $(document).on('click', '.sub_visual_menu .depth .drop_box li a', function(){
             var selected = $(this).text();
             var dep_tit = $(this).closest('.drop_box').siblings('.dep_tit');
-            dep_tit.text(selected);  
-            
+            dep_tit.text(selected);
+
 
             var depth2W = $('.sub_visual_menu .depth2');
             var depth2Tit = $('.sub_visual_menu .depth2 .dep_tit').text();
@@ -99,7 +99,7 @@ var commonEvent = {
             }else{
                 if($(window).width()>767){
                     depth2W.width('225px');
-    
+
                 }else{
                     depth2W.width('calc(100% -5rem)');
                 }
@@ -136,7 +136,7 @@ var commonEvent = {
             let cirTxt = $('.text-circle');
 
             if (st>=100){
-                $('.header').addClass('fixed'); 
+                $('.header').addClass('fixed');
                 if (anchor1.length) {
                     let badge = anchor1.offset().top;
                     if (st >= badge - 500) {
@@ -158,7 +158,7 @@ var commonEvent = {
         // 번역페이지 버튼 온/오프
         $(document).on('click', '.lang_choice li', function(){
             $('.lang_choice li').removeClass('on');
-            $(this).addClass('on');  
+            $(this).addClass('on');
         });
 
         // 사이트맵 메뉴 출력
@@ -178,7 +178,7 @@ var commonEvent = {
                 }
                 // $('.wrap').addClass('notScroll');
                 // $('.wrap').css({'overflow':'hidden', 'position': 'fixed'});
-                
+
 
 
             } else {
@@ -189,7 +189,7 @@ var commonEvent = {
                 }
                 // $('.wrap').removeClass('notScroll');
                 // $('.wrap').css({'overflow':'', 'position': ''});
-                
+
             }
         });
         $(document).on('click', '.sitemap_wrap li', function(){
@@ -208,7 +208,7 @@ var commonEvent = {
             var footerTop = $('.footer').offset().top - $(window).outerHeight();
             var pos = $('.footer').outerHeight() + Number(80);
             var pos_m = $('.footer').outerHeight() + Number(33);
-            
+
             if($(this).scrollTop() > footerTop){
                 if($(window).width()>767){
                     $('#topButton').addClass('on').css({'bottom':pos});
@@ -222,7 +222,7 @@ var commonEvent = {
                 }else {
                     $('#topButton').removeClass('on').css({'bottom':'3.3rem'});
                 }
-                
+
             }
         });
 
@@ -230,7 +230,7 @@ var commonEvent = {
             $('html, body').animate({scrollTop:0}, '300');
         });
     },
-    
+
     footerEvent:function(){
         //family site event
         $(document).on("click",".footer .family_site .site_link .link_open",function(){
@@ -241,7 +241,7 @@ var commonEvent = {
                 selElm.removeClass("open");
             }
         });
-        
+
     },
 };
 
@@ -254,18 +254,18 @@ var onmEvent = {
         // 탭 버튼 및 2depth 탭 버튼
         var Tabs = $('.business_contents .section1 .nav_btn li');
         var Tabs_depth2 = $(".swiper_2depth_tabs p");
-        
+
 
         $(".swiper").each(function(index){
             // var add_depth_calc1 = index + (1);
-            // // 첫번째 슬라이드 2depth 스와이퍼 
+            // // 첫번째 슬라이드 2depth 스와이퍼
             // var swiper1_01 = new Swiper('.swiper1_01', {
             //     observer: true,
             //     observeParents: true,
             //     slidesPerView : 2,
             //     spaceBetween: 70,
             //     speed: 700,
-                
+
             //     navigation: {
             //         nextEl: '.swiper-button-next01_01',
             //         prevEl: '.swiper-button-prev01_01',
@@ -273,7 +273,7 @@ var onmEvent = {
             //     watchOverflow: true,
 
             //     breakpoints: {
-        
+
             //         768: {
             //           slidesPerView: 1,  //브라우저가 768보다 클 때
             //           spaceBetween: 20,
@@ -282,7 +282,7 @@ var onmEvent = {
             //           slidesPerView: 2,  //브라우저가 1024보다 클 때
             //           spaceBetween: 70,
             //         },
-            //       },   
+            //       },
             // });
             // var swiper1_02 = new Swiper('.swiper1_02', {
             //     observer: true,
@@ -290,7 +290,7 @@ var onmEvent = {
             //     slidesPerView : 2,
             //     spaceBetween: 70,
             //     speed: 700,
-                
+
             //     navigation: {
             //         nextEl: '.swiper-button-next01_01',
             //         prevEl: '.swiper-button-prev01_01',
@@ -298,7 +298,7 @@ var onmEvent = {
             //     watchOverflow: true,
 
             //     breakpoints: {
-        
+
             //         768: {
             //           slidesPerView: 1,  //브라우저가 768보다 클 때
             //           spaceBetween: 20,
@@ -307,7 +307,7 @@ var onmEvent = {
             //           slidesPerView: 2,  //브라우저가 1024보다 클 때
             //           spaceBetween: 70,
             //         },
-            //       },   
+            //       },
             // });
             // var swiper1_03 = new Swiper('.swiper1_03', {
             //     observer: true,
@@ -315,7 +315,7 @@ var onmEvent = {
             //     slidesPerView : 2,
             //     spaceBetween: 70,
             //     speed: 700,
-                
+
             //     navigation: {
             //         nextEl: '.swiper-button-next01_01',
             //         prevEl: '.swiper-button-prev01_01',
@@ -323,7 +323,7 @@ var onmEvent = {
             //     watchOverflow: true,
 
             //     breakpoints: {
-        
+
             //         768: {
             //           slidesPerView: 1,  //브라우저가 768보다 클 때
             //           spaceBetween: 20,
@@ -332,24 +332,24 @@ var onmEvent = {
             //           slidesPerView: 2,  //브라우저가 1024보다 클 때
             //           spaceBetween: 70,
             //         },
-            //       },   
+            //       },
             // });
 
             // 탭 메뉴 슬라이드 스와이퍼
-            
+
             //var $this = $(this);
             //var add_depth_calc2 = index - (Tabs_depth2.length - 2);
             //$this.addClass('swiper' + add_depth_calc2);
-            // 첫번째 슬라이드 2depth 스와이퍼 
+            // 첫번째 슬라이드 2depth 스와이퍼
 
-        
+
             var swiper = new Swiper('.swiper', {
                 observer: true,
                 observeParents: true,
                 slidesPerView : 2,
                 spaceBetween: 70,
                 speed: 700,
-                
+
                 navigation: {
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev',
@@ -357,7 +357,7 @@ var onmEvent = {
                 watchOverflow: true,
 
                 breakpoints: {
-        
+
                     768: {
                       slidesPerView: 1,  //브라우저가 768보다 클 때
                       spaceBetween: 20,
@@ -366,7 +366,7 @@ var onmEvent = {
                       slidesPerView: 2,  //브라우저가 1024보다 클 때
                       spaceBetween: 70,
                     },
-                  },  
+                  },
             });
 
             var swiper1 = new Swiper('.swiper1_box .swiper', {
@@ -375,7 +375,7 @@ var onmEvent = {
                 slidesPerView : 2,
                 spaceBetween: 70,
                 speed: 700,
-                
+
                 navigation: {
                     nextEl: '.swiper-button-next01_01',
                     prevEl: '.swiper-button-prev01_01',
@@ -383,7 +383,7 @@ var onmEvent = {
                 watchOverflow: true,
 
                 breakpoints: {
-        
+
                     768: {
                       slidesPerView: 1,  //브라우저가 768보다 클 때
                       spaceBetween: 20,
@@ -392,17 +392,17 @@ var onmEvent = {
                       slidesPerView: 2,  //브라우저가 1024보다 클 때
                       spaceBetween: 70,
                     },
-                  },   
+                  },
             });
-            
+
             // 탭버튼 function
             Tabs.on("click", function() {
-                
+
                 console.log(index);
                 // 탭 버튼 CSS 액티브 효과
                 $(this).addClass('on');
                 $(this).siblings().removeClass('on');
-                
+
                 // Tab버튼 index값 추출
                 var Tabs_idx = Tabs.index(this)+1;
 
@@ -424,18 +424,18 @@ var onmEvent = {
                     Tabs_depth2.removeClass('on');
                     Tabs_depth2.eq(0).addClass('on');
                     swiper1.slideTo(0, 0);
-                    
+
                 }, 0);
 
                 // 클릭요소의 하단 그리드형 리스트 출력
                 $('.section3 .onm_list').removeClass('on');
                 $('.section3 .onm_list0' + Tabs_idx).addClass('on');
-                
+
                 // 모든 슬라이드 컨테이너 첫번째 슬라이드로 초기화
                 swiper.slideTo(0, 0);
-                
+
             });
-            
+
             // 첫번째 슬라이드 컨테이너 내부 2depth 탭 버튼
             Tabs_depth2.on('click', function(){
                 // 클릭한 2depth 탭 버튼 인덱스 값 추출 및 같은 인덱스값의 슬라이드 컨테이너 추적
@@ -445,7 +445,7 @@ var onmEvent = {
                 // 2depth 탭 버튼 CSS 액티브 효과
                 Tabs_depth2.removeClass('on');
                 $(this).addClass('on');
-                
+
                 // 2depth 클릭요소 제외한 다른 슬라이드 컨테이너 및 AOS 모션 삭제
                 tab_slide.hide();
                 $('.swiper1_box0' + idx).css({display:'block'});
@@ -458,24 +458,24 @@ var onmEvent = {
                     // 2depth 모든 슬라이드 컨테이너 첫번째 슬라이드로 초기화
                     swiper1.slideTo(0, 0);
                 }, 0);
-                
+
             });
         });
     },
 
-    
+
 };
 
 //사업실적 팝업
 function popupbusiness(popConts) {
     var popthis = $(".popup."+popConts);
     popthis.fadeIn(300);
-    
+
     // 탭 메뉴 슬라이드 스와이퍼
     var popSlide01 = new Swiper('.card_popup01 .inner_box', {
         slidesPerView : '1',
         watchOverflow : true,
-        navigation: {  
+        navigation: {
             nextEl: '.inner_nav .next',
             prevEl: '.inner_nav .prev',
         },
@@ -501,7 +501,7 @@ function popupbusiness(popConts) {
     var popSlide02 = new Swiper('.card_popup02 .inner_box', {
         slidesPerView : '1',
         watchOverflow : true,
-        navigation: {  
+        navigation: {
             nextEl: '.inner_nav .next',
             prevEl: '.inner_nav .prev',
         },
@@ -528,7 +528,7 @@ function popupbusiness(popConts) {
     var popSlide03 = new Swiper('.card_const .inner_box', {
         slidesPerView : '1',
         watchOverflow : true,
-        navigation: {  
+        navigation: {
             nextEl: '.inner_nav .next',
             prevEl: '.inner_nav .prev',
         },
@@ -565,7 +565,7 @@ var recruitEvent = {
         $(".que").click(function() {
             $(this).next(".ans").stop().slideToggle(300);
             $(this).toggleClass('on').siblings().removeClass('on');
-            $(this).next(".ans").siblings(".ans").slideUp(300); 
+            $(this).next(".ans").siblings(".ans").slideUp(300);
          });
     },
 };
@@ -581,7 +581,7 @@ var rndEvent = {
         Tabs.on("click", function() {
             $(this).addClass('on');
             $(this).siblings().removeClass('on');
-            
+
             var Tabs_idx = Tabs.index(this)+1;
             $('.section2 .tb_box').removeClass('on');
             $('.section2 .tb_box0' + Tabs_idx).addClass('on');
@@ -594,9 +594,9 @@ var rndEvent = {
                 setTimeout (function() {
                     focused.scrollIntoView({behavior: "smooth", block: "nearest", inline: "end"});
                 }, 1500)
-            
+
         })
-        
+
     }
 };
 // 에너지 페이지 이벤트
@@ -611,7 +611,7 @@ var energyEvent = {
             slidesPerView : 1,
             spaceBetween: 70,
             speed: 1000,
-            
+
             navigation: {
                 nextEl: '.arrow.swiper-button-next',
                 prevEl: '.arrow.swiper-button-prev',
@@ -628,7 +628,7 @@ var energyEvent = {
                 slidesPerView: 2,  //브라우저가 1024보다 클 때
                 spaceBetween: 70,
                 },
-            },   
+            },
         });
     },
 };
@@ -639,33 +639,33 @@ var methodEvent = {
         this.subtab();
     },
     subtab: function(){
-        
+
         var subtabList = $('.skills_contents .sub_tab li');
         subtabList.on('click', function(){
             var idx = subtabList.index(this)+1;
             var method_wrap = $(this).parents().siblings('.method_wrap');
-            
+
             subtabList.removeClass('on');
             $(this).addClass('on');
-            
+
             method_wrap.hide();
             $('.method_wrap0' + idx).css({display:'block'});
             $('.method_wrap').removeClass('aos-animate');
             // method_wrap.find('section').removeattr('data-aos');
-            
+
             if(idx == 1) {
                 $('.method_bg').css({display:'block'});
             }else {
                 $('.method_bg').css({display:'none'});
             }
-            
+
             setTimeout(function() {
                 // method_wrap.find('section').addClass('aos-animate');
                 $('.method_wrap0' + idx).addClass('aos-animate');
             }, 0);
         });
     },
-    
+
 };
 
 //자연순환 페이지 이벤트
@@ -677,7 +677,7 @@ var resourceEvent = {
         var myswiper = new Swiper('.circulation_wrap .swiper-container', {
             spaceBetween: 0,
             slidesPerView : 1,
-            
+
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -688,7 +688,7 @@ var resourceEvent = {
 
 ////////////////////////////////////////////// 메인 페이지 이벤트 (FD-00-01-001)
 var mainEvent = {
-    
+
     init:function(){
         this.headerMain();
         this.mainSwiper();
@@ -704,15 +704,15 @@ var mainEvent = {
     headerMain:function(){
         $('.header').addClass('main_fixed');
         $(window).on('scroll',function(){
-            
+
             const st = $(window).scrollTop();
             let anchor = $('.section0').outerHeight();
             let anchor1 = $('.section1');
             let cirTxt = $('.text-circle');
 
             if (st>=100){
-                $('.header').removeClass('main_fixed'); 
-                $('.header').addClass('main_fixed2'); 
+                $('.header').removeClass('main_fixed');
+                $('.header').addClass('main_fixed2');
                 if (anchor1.length) {
                     let badge = anchor1.offset().top;
                     if (st >= badge - 500) {
@@ -725,24 +725,24 @@ var mainEvent = {
                 }
 
                 if (st > anchor) {
-                    $('.header').removeClass('main_fixed2'); 
-                    $('.header').addClass('fixed'); 
+                    $('.header').removeClass('main_fixed2');
+                    $('.header').addClass('fixed');
                 } else {
-                    $('.header').removeClass('fixed'); 
+                    $('.header').removeClass('fixed');
                 }
             } else{
                 $('.header').addClass('main_fixed');
-                $('.header').removeClass('main_fixed2'); 
+                $('.header').removeClass('main_fixed2');
                 cirTxt.find('img').eq(0).css('display','block');
                 cirTxt.find('img').eq(1).css('display','none');
             }
-            
+
         });
 
         // 번역페이지 버튼 온/오프
         $(document).on('click', '.lang_choice li', function(){
             $('.lang_choice li').removeClass('on');
-            $(this).addClass('on');  
+            $(this).addClass('on');
         });
 
         // 사이트맵 메뉴 출력
@@ -762,7 +762,7 @@ var mainEvent = {
                 }
                 // $('.wrap').addClass('notScroll');
                 // $('.wrap').css({'overflow':'hidden', 'position': 'fixed'});
-                
+
 
 
             } else {
@@ -773,7 +773,7 @@ var mainEvent = {
                 }
                 // $('.wrap').removeClass('notScroll');
                 // $('.wrap').css({'overflow':'', 'position': ''});
-                
+
             }
         });
         $(document).on('click', '.sitemap_wrap li', function(){
@@ -858,7 +858,7 @@ var mainEvent = {
         //     autoplaySpeed = video.duration - video.currentTime;
 
         //     setInterval(progressBar, 10);
-          
+
         //     function progressBar(){
         //         var percentage = (video.currentTime/video.duration) * 1000;
         //         $(".naviPlay .playbar.playbar" + idx + ".autoplay .playTime").css({"width":percentage});
@@ -877,7 +877,7 @@ var mainEvent = {
                 $(this).addClass("autoplay");
                 mySwiper.autoplay.start();
                 video.play();
-               
+
 
                 $(".naviPlay .playbar.playbar"+idx).addClass("autoplay");
                 $(".naviPlay .playbar.playbar").removeClass("active");
@@ -886,7 +886,7 @@ var mainEvent = {
                 $(this).removeClass("autoplay");
                 mySwiper.autoplay.stop();
                 video.pause();
-               
+
 
                 $(".naviPlay .playbar").removeClass("autoplay");
                 $(".naviPlay .playbar.playbar"+idx).addClass("active");
@@ -950,9 +950,9 @@ var mainEvent = {
 
         var ww = $(window).width();
         var mySwiper = undefined;
-        
+
         function initSwiper() {
-        
+
           if (ww < 768 && mySwiper == undefined) {
             mySwiper = new Swiper(".sustain_list .swiper-container", {
               slidesPerView: 1,
@@ -968,22 +968,22 @@ var mainEvent = {
             mySwiper = undefined;
           }
         }
-        
+
         initSwiper();
-        
+
         $(window).on('resize', function () {
           ww = $(window).width();
           initSwiper();
-        });  
+        });
 
     },
 
     // sustainSwiper:function(){
     //     var ww = $(window).width();
     //     var mySwiper = undefined;
-        
+
     //     function initSwiper() {
-        
+
     //       if (ww < 768 && mySwiper == undefined) {
     //         mySwiper = new Swiper(".sustain_list .swiper-container", {
     //           slidesPerView: 1,
@@ -999,22 +999,22 @@ var mainEvent = {
     //         mySwiper = undefined;
     //       }
     //     }
-        
+
     //     initSwiper();
-        
+
     //     $(window).on('resize', function () {
     //       ww = $(window).width();
     //       initSwiper();
-    //     });        
+    //     });
     // },
 
     // 탄소수치 badge 카운트 시작
     numberCountUp1: function() {
+
         //var memberCountConTxt1= 99.99;    // 갱신된 변수값 저장
         // var bezier_count = numberWithCommas(Math.floor(memberCountConTxt1));
-        
-        //$({ val : 0 }).animate({ val : memberCountConTxt1 }, {  // 이전 데이터값 변수 저장 (val값에)
-    	$({ val : memberCountConTxt1_prev }).animate({ val : memberCountConTxt1 }, {  // 이전 데이터값 변수 저장 (val값에)
+
+    	$({ val : 0 }).animate({ val : $("#totalTreeRate").val() }, {  // 이전 데이터값 변수 저장 (val값에)
             duration: 5000,
             step: function() {
                 var num = numberWithCommas(Math.round(this.val * 100) / 100);
@@ -1025,6 +1025,9 @@ var mainEvent = {
                 var num = numberWithCommas(Math.round(this.val * 100) / 100);
                 $(".mov_num1").text(num);
                 $('.carbon_chart').css({"background":"conic-gradient(#7bcc40 0% , #198c7a " + (num / 2) + "%, #198c7a " + num + "%, transparent "+ num + "% 100%)"});
+
+                // 완료여부 삽입
+                $("#totalTreeRate_isComplete").val("true");
             }
         });
 
@@ -1054,10 +1057,11 @@ var mainEvent = {
 
     // 탄소저감 area 총 감축량 카운트 시작
     numberCountUp2: function() {
-        //var memberCountConTxt2= 6405232;    // 갱신된 변수값 저장
 
+        //var memberCountConTxt2= 6405232;    // 갱신된 변수값 저장
         //$({ val : 6405200 }).animate({ val : memberCountConTxt2 }, {    // 이전 데이터값 변수 저장 (val값에)
-    	$({ val : memberCountConTxt2_prev }).animate({ val : memberCountConTxt2 }, {    // 이전 데이터값 변수 저장 (val값에)
+
+    	$({ val : 0 }).animate({ val : $("#totalTreeSum").val() }, {    // 이전 데이터값 변수 저장 (val값에)
             duration: 10000,
             step: function() {
                 var num = numberWithCommas(Math.floor(this.val));
@@ -1066,16 +1070,25 @@ var mainEvent = {
             complete: function() {
                 var num = numberWithCommas(Math.floor(this.val));
                 $(".mov_num2").text(num);
+
+                // 완료여부 삽입
+                $("#totalTreeSum_isComplete").val("true");
+
+                // 매 초마다 트리 로드 이벤트 실행
+                var intervalId = window.setInterval(function(){
+                	fn_getMainTreeInfo();
+                }, 2000);
+
             }
         });
 
         function numberWithCommas(x) {
             return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
         }
-        
+
 
     },
-    
+
     main_startEvent: function() {
         let isVisible = false;
         let responsive = $(window).width();
@@ -1088,20 +1101,20 @@ var mainEvent = {
                     mainEvent.numberCountUp2();
                     mainEvent.numberCountUp1();
                     isVisible=true;
-                } 
-        
+                }
+
                 var carbonStop = $('.section1').offset().top -  $('.header').outerHeight();
-                var carPos = $('.tit_area').height() + $('.header').outerHeight() + Number(-20);  
+                var carPos = $('.tit_area').height() + $('.header').outerHeight() + Number(-20);
                 if($(this).scrollTop() > carbonStop){
                     $('.count2').addClass('on').css({'top':carPos});
                 }else {
                     $('.count2').removeClass('on').css({'top':'35%'});
-                }    
+                }
 
             });
-        
-            
-        } else { 
+
+
+        } else {
             window.addEventListener('scroll', function() {
                 if (checkVisible($('.count_trigger')) && !isVisible) {
                     mainEvent.numberCountUp2();
@@ -1117,7 +1130,7 @@ var mainEvent = {
                 scrolltop = $(window).scrollTop(), // Scroll Top
                 y = $(elm).offset().top,
                 elementHeight = $(elm).height();
-    
+
             if (eval == "object visible") return ((y < (viewportHeight + scrolltop)) && (y > (scrolltop - elementHeight)));
             if (eval == "above") return ((y < (viewportHeight + scrolltop)));
         }
@@ -1131,58 +1144,58 @@ var mainEvent = {
             $(this).attr("src", $(this).data("static"))
         })
 
-        //스크롤 중 대상($videos)이 화면 중간에 위치하면 클래스 추가 또는 이벤트(재생/일시정지) 실행 
-        $(window).on('scroll',scrollFn); 
-        
-        // Scroll Event 
-        $.fn.scrollGet = function(){ 
-            var offset = $(window).scrollTop() + $(window).height() - 200, 
-            $svgLine = $('.tree_counts li'); 
+        //스크롤 중 대상($videos)이 화면 중간에 위치하면 클래스 추가 또는 이벤트(재생/일시정지) 실행
+        $(window).on('scroll',scrollFn);
 
-            $svgLine.each(function(i) { 
-                var $line = $(this), 
+        // Scroll Event
+        $.fn.scrollGet = function(){
+            var offset = $(window).scrollTop() + $(window).height() - 200,
+            $svgLine = $('.tree_counts li');
+
+            $svgLine.each(function(i) {
+                var $line = $(this),
                 line = $line.find('.line');
                 Count = $line.find('.tc')
-                
 
-                if (($line.offset().top) < offset) { 
-                    if(!$line.hasClass('on')){ 
+
+                if (($line.offset().top) < offset) {
+                    if(!$line.hasClass('on')){
                         line.addClass('on');
                         Count.addClass('on');
-                    } 
+                    }
                 }
-            }); 
-        }; 
-        // Scroll Event Function 
-        function scrollFn(){ 
+            });
+        };
+        // Scroll Event Function
+        function scrollFn(){
             $.fn.scrollGet();
         }
 
     },
 
     treeCount: function() {
-        
+
         // var treeChart1= 732901;    // 갱신된 변수값 저장
         // $({ val : 0 }).animate({ val : treeChart1 }, { duration: 2000,
         //     step: function() { var num = numberWithCommas(Math.floor(this.val)); $(".tree_counts li:eq(0) .count span").text(num); },
         //     complete: function() { var num = numberWithCommas(Math.floor(this.val)); $(".tree_counts li:eq(0) .count span").text(num); }
-        // }); 
-        // var treeChart2= 312442; 
+        // });
+        // var treeChart2= 312442;
         // $({ val : 0 }).animate({ val : treeChart2 }, { duration: 2000,
         //     step: function() { var num = numberWithCommas(Math.floor(this.val)); $(".tree_counts li:eq(1) .count span").text(num); },
         //     complete: function() { var num = numberWithCommas(Math.floor(this.val)); $(".tree_counts li:eq(1) .count span").text(num); }
         // });
-        // var treeChart3= 624256; 
+        // var treeChart3= 624256;
         // $({ val : 0 }).animate({ val : treeChart3 }, { duration: 2000,
         //     step: function() { var num = numberWithCommas(Math.floor(this.val)); $(".tree_counts li:eq(2) .count span").text(num); },
         //     complete: function() { var num = numberWithCommas(Math.floor(this.val)); $(".tree_counts li:eq(2) .count span").text(num); }
         // });
-        // var treeChart4= 4649890; 
+        // var treeChart4= 4649890;
         // $({ val : 0 }).animate({ val : treeChart4 }, { duration: 2000,
         //     step: function() { var num = numberWithCommas(Math.floor(this.val)); $(".tree_counts li:eq(3) .count span").text(num); },
         //     complete: function() { var num = numberWithCommas(Math.floor(this.val)); $(".tree_counts li:eq(3) .count span").text(num); }
         // });
-        // var treeChart5= 85742; 
+        // var treeChart5= 85742;
         // $({ val : 0 }).animate({ val : treeChart5 }, { duration: 2000,
         //     step: function() { var num = numberWithCommas(Math.floor(this.val)); $(".tree_counts li:eq(4) .count span").text(num); },
         //     complete: function() { var num = numberWithCommas(Math.floor(this.val)); $(".tree_counts li:eq(4) .count span").text(num); }
@@ -1190,27 +1203,27 @@ var mainEvent = {
 
         let isVisible = false;
         window.addEventListener('scroll', function() {
-            
+
             if (checkVisible($('.tree')) && !isVisible) {
                 var list = new Array();
-                $('.tree_counts .count .tc').each(function(index, item) { 
-                    
+                $('.tree_counts .count .tc').each(function(index, item) {
+
                     var $this = $(this),
                         countTo = $this.attr('data-count');
 
                     ($({ countNum: $this.text()}).animate({ countNum: countTo },
                         {
-                        duration: 5000, 
+                        duration: 5000,
                         easing:'linear',
                         step: function() {
                             var num = numberWithCommas(Math.floor(this.countNum));
                             $this.text(num);
                         },
-                        complete: function() { 
+                        complete: function() {
                             var num = numberWithCommas(Math.floor(this.countNum));
                             $this.text(num);
                         }
-                    
+
                     }))
 
                     list.push($(item).attr('data-count'));
@@ -1221,31 +1234,31 @@ var mainEvent = {
                     //console.log(sum);
 
                     // 총 감축량(합계)
-                    var treeChartSum = sum; 
-                    $({ val : 0 }).animate({ 
-                        val : treeChartSum 
-                    }, 
-                    { 
+                    var treeChartSum = sum;
+                    $({ val : 0 }).animate({
+                        val : treeChartSum
+                    },
+                    {
                         duration: 5000,
-                        step: function() { 
-                            var num = numberWithCommas(Math.floor(this.val)); 
-                            $(".tree_counts li:eq(5) .count span").text(num); 
+                        step: function() {
+                            var num = numberWithCommas(Math.floor(this.val));
+                            $(".tree_counts li:eq(5) .count span").text(num);
                         },
-                        complete: function() { 
-                            var num = numberWithCommas(Math.floor(this.val)); 
-                            $(".tree_counts li:eq(5) .count span").text(num); 
+                        complete: function() {
+                            var num = numberWithCommas(Math.floor(this.val));
+                            $(".tree_counts li:eq(5) .count span").text(num);
                         }
-                    });  
-                });   
+                    });
+                });
 
                 isVisible=true;
-            } 
+            }
 
         });
 
         function numberWithCommas(x) {
             return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-        }  
+        }
 
         function checkVisible( elm, eval ) {
             eval = eval || "object visible";
@@ -1253,7 +1266,7 @@ var mainEvent = {
                 scrolltop = $(window).scrollTop(), // Scroll Top
                 y = $(elm).offset().top,
                 elementHeight = $(elm).height();
-    
+
             if (eval == "object visible") return ((y < (viewportHeight + scrolltop)) && (y > (scrolltop - elementHeight)));
             if (eval == "above") return ((y < (viewportHeight + scrolltop)));
         }
@@ -1269,7 +1282,7 @@ var mainEvent = {
             var par_on = $('.section2').offset().top;
             var $transform = [];
             var $transform_rev = [];
-        
+
             $('[data-type="parallax"]').each(function(index, e) {
                 var $transformObj = $(this);
                 $transformObj.__speed = ($transformObj.data('speed') || 1);
@@ -1283,12 +1296,12 @@ var mainEvent = {
                 $transform_revObj.__fgOffset = $transform_revObj.offset().top;
                 $transform_rev.push($transform_revObj);
             });
-        
+
             // update positions
             $fwindow.on('scroll resize', function() {
                 scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-                $transform.forEach(function($transformObj) {  
+                $transform.forEach(function($transformObj) {
                     var yPos = ((scrollTop - $transformObj.__fgOffset) / $transformObj.__speed) + 30;
 
                     if ($('.section2').length) {
@@ -1298,11 +1311,11 @@ var mainEvent = {
                             $transformObj.css({"transform": "translate(0, 0)"});
                         }
                     }
-                }) 
+                })
 
                 $transform_rev.forEach(function($transform_revObj) {
                     var yPos = -((scrollTop - $transform_revObj.__fgOffset) / $transform_revObj.__speed) - 40;
-                    
+
                     if ($('.section2').length) {
                         if (scrollTop >= par_on) {
                             $transform_revObj.css({"transform": "translate(0," + yPos + "px)"});
@@ -1323,7 +1336,7 @@ var mainEvent = {
 
         }
     },
-    
+
 };
 
 

@@ -51,7 +51,18 @@ function linkBusiness(idx, num) {
     		location.href = "/en/env/bsnsintrcn/bsnsintrcnList.do?MENUNO=" + idx + "&SUB_MENUNO="+ num +"&searchBsnsintrcnCode=" + searchBsnsintrcnCode + "&searchClCode=" + searchClCode + "&ctgryNo=" + ctgryNo;		
     	}
     }
-}		
+}
+
+function linkCarbon(idx , num){
+
+    var chk = linkArray[idx][num];
+
+    if(idx == 3 && num == 3){
+    	location.href = "/en/env/carbonReduc/carbonReducDtl.do?MENUID=" + idx + "&SUB_MENUNO=" + num
+    }
+
+}
+	
 		
 /*
  * 파일 다운로드

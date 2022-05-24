@@ -41,7 +41,7 @@
                                 <b>폐기물을 에너지화</b>하고 있습니다. 
                             </p>
                             <div class="top">
-                                <ul class="tab_list" data-aos="fade-up" data-aos-duration="600" data-aos-offset="200" data-aos-delay="700">
+                                <ul class="tab_list" data-aos="fade-up" data-aos-duration="600">
                                     <li class="on focus"><a href="/sub.do?MENUID=02_02_0011&MENUNO=2">개요</a></li>
                                     <li class=""><a href="/sub.do?MENUID=02_02_0012&MENUNO=2">소각</a></li>
                                     <li class=""><a href="/sub.do?MENUID=02_02_0013&MENUNO=2">폐열회수</a></li>

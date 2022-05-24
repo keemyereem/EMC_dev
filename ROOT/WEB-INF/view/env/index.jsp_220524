@@ -2,11 +2,12 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="file" uri="/WEB-INF/tlds/fileLib.tld"%>
 <script>
-
     $(document).ready( function() {
         mainEvent.init();
-    });
+        
+        // setTimeout("location.reload()", 11000); // 약 10초후 화면이 새로고침이 됩니다.
 
+    });
 </script>
             <div class="contents cont_main">
                 <section class="section0">
@@ -16,7 +17,7 @@
                             최상의 서비스를 제공하는 <br>
                             글로벌 환경전문기업을 만들어갑니다.
                         </div>
-
+                        
                         <!-- slide swiper lists -->
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -40,7 +41,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>  
                     <div class="naviPlay">
                         <span class="naviAuto">
                             <a href="javascript:;" class="autoplay"><img src="/resources/service/env/images/common/icon_pause.png" /></a>
@@ -64,10 +65,10 @@
                                 </span>
                             </div>
                         </div>
-                    </div>
+                    </div>                      
                 </section>
                 <%@ include file="/WEB-INF/view/env/carbonReduc/carbonReducMainAjax.jsp" %>
-
+                
                 <section class="section2">
                     <div class="tit_area">
                         <h2 class="title" data-aos="zoom-out" data-aos-duration="500">Business area</h2>
@@ -75,8 +76,8 @@
                             오랜 기간 경험의 바탕과 <b>끊임없는<br class="br_m"> 도전</b>으로<br class="br_pc">
                             <b>환경분야 최고 수준의<br class="br_m"> 기술력</b>을 갖춘 기업이 될 것입니다.
                         </p>
-                    </div>
-                    <div class="line"></div>
+                    </div>  
+                    <div class="line"></div>  
                     <ul class="business_list ani-on">
                         <li data-type="parallax" data-speed="20">
                             <div class="img"><img src="/resources/service/env/images/main/main_bus01.png" alt="O&M 이미지"></div>
@@ -113,7 +114,7 @@
                                     <dd>
                                         환경시설관리주식회사는 폐기물을 안전하게 소각 처리하고, <br class="br_pc">
                                         처리과정에서 발생되는 열원 등을 발전 및 온수공급에 <br class="br_pc">
-                                        활용하여 폐기물을 에너지화하고 있습니다.
+                                        활용하여 폐기물을 에너지화하고 있습니다. 
                                     </dd>
                                 </dl>
                             </div>
@@ -122,7 +123,7 @@
                             <div class="img"><img src="/resources/service/env/images/main/main_bus04.png" alt="자연순환 이미지"></div>
                             <div class="txt">
                                 <dl>
-                                    <dt>자연순환</dt>
+                                    <dt>자원순환</dt>
                                     <dd>
                                         환경시설관리주식회사는 버려지는 폐기물을 <br class="br_pc">
                                         감량화, 자원화, 에너지화 함으로써 자원을 재활용하고 <br class="br_pc">
@@ -133,14 +134,14 @@
                         </li>
                     </ul>
                 </section>
-
+                
                 <section class="section3">
                     <div class="tit_area">
                         <h2 class="title" data-aos="zoom-out" data-aos-duration="500">지속가능경영</h2>
                         <p class="sub_con" data-aos="fade-up" data-aos-delay="500">
                             <b>지속 가능한 친환경 경영을<br class="br_m"> </b>을 실천하는 EMC
                         </p>
-                    </div>
+                    </div> 
                     <div class="sustain_list">
                         <img src="/resources/service/env/images/main/s3_bg01.png" alt="" class="s3_bg01">
                         <img src="/resources/service/env/images/main/s3_bg02.png" alt="" class="s3_bg02">
@@ -155,9 +156,9 @@
                                         <p class="sustain_sub">
                                             요령을 피우지 않고 멀리 보고 큰 이익을<br class="br_m"> 추구하는 경영으로
                                             투명한 경영활동과<br class="br_m"> 사회적 책임을 다함으로써 이해관계자에게<br class="br_m">
-                                            존경받는 기업이 되고자 노력하고 있습니다.
+                                            존경받는 기업이 되고자 노력하고 있습니다.                                        
                                         </p>
-                                        <a href="javascript:link(3,0);" class="view_more">자세히보기</a>
+                                        <a href="javascript:link(3,0);" class="view_more">자세히보기</a> 
                                     </div>
                                 </li>
                                 <li class="swiper-slide">
@@ -166,9 +167,9 @@
                                         <p class="sustain_sub">
                                             안전보건관리를 경영의 최우선 가치로 선정하여<br class="br_m"> 구성원과
                                             이해관계자의 행복을 지키기 위해<br class="br_m"> 체계적인 관리 절차 수립과 관련
-                                            규정을 철저히 준수하고<br class="br_m"> 안전한 작업환경을 조성하고 있습니다.
+                                            규정을 철저히 준수하고<br class="br_m"> 안전한 작업환경을 조성하고 있습니다.                                        
                                         </p>
-                                        <a href="javascript:link(3,1);" class="view_more">자세히보기</a>
+                                        <a href="javascript:link(3,1);" class="view_more">자세히보기</a> 
                                     </div>
                                 </li>
                                 <li class="swiper-slide">
@@ -179,7 +180,7 @@
                                             규정과 규칙을 제정하였으며, 구성원들의<br class="br_m"> 자발적인 법규 준수를 통하여
                                             공정거래 자율준수 문화가<br class="br_m"> 기업 내 정착될 수 있도록 노력하고 있습니다.
                                         </p>
-                                        <a href="javascript:link(3,2);" class="view_more">자세히보기</a>
+                                        <a href="javascript:link(3,2);" class="view_more">자세히보기</a> 
                                     </div>
                                 </li>
                                 <li class="swiper-slide">
@@ -188,9 +189,9 @@
                                         <p class="sustain_sub">
                                             운영 사업소의 에너지 생산량 기준으로<br class="br_m">
                                             이산화탄소의 감축량을 계산하며,<br class="br_m">
-                                            환경을 지키기 위한 emc의 노력은 계속됩니다.
+                                            환경을 지키기 위한 emc의 노력은 계속됩니다.                                        
                                         </p>
-                                        <a href="javascript:linkCarbon(3,3);" class="view_more">자세히보기</a>
+                                        <a href="javascript:link(3,3);" class="view_more">자세히보기</a> 
                                     </div>
                                 </li>
                                 <li class="swiper-slide">
@@ -199,9 +200,9 @@
                                         <p class="sustain_sub">
                                             환경을 보호하는 기업의 일원으로서 국가와 사회에<br class="br_m"> 기여한다는
                                             자부심을 다른 어떤 기업에서도 느낄 수 없는<br class="br_m"> 소중한 가치로 삼으며,
-                                            다양한 사회 공헌활동에<br class="br_m"> 모두 적극적으로 참여하고 있습니다.
+                                            다양한 사회 공헌활동에<br class="br_m"> 모두 적극적으로 참여하고 있습니다.                                                                              
                                         </p>
-                                        <a href="javascript:linkBBS(3,4, 'BM0000000001');" class="view_more">자세히보기</a>
+                                        <a href="javascript:linkBBS(3,4, 'BM0000000001');" class="view_more">자세히보기</a> 
                                     </div>
                                 </li>
                             </ul>
@@ -209,14 +210,14 @@
                         </div>
                     </div>
                 </section>
-
+                
                 <section class="section4">
                     <div class="tit_area">
                         <h2 class="title" data-aos="zoom-out" data-aos-duration="500">EMC area</h2>
                         <p class="sub_con" data-aos="fade-up" data-aos-delay="500">
                             <b>투명한, 청렴한, 깨끗한<br class="br_m"> 성장</b>을 만들어 갑니다.
                         </p>
-                    </div>
+                    </div> 
                     <div class="emc_wrap">
                         <div class="news">
                             <div class="top">
@@ -245,7 +246,7 @@
                                     </a>
                                 </li>
                             	</c:forEach>
-
+                             
                             </ul>
                         </div>
                         <div class="emc_list">
@@ -255,7 +256,7 @@
                                         <div class="emc_tit">경영비전</div>
                                         <div class="emc_sub">
                                             환경시설관리주식회사는 기술 기반의<br>
-                                            환경 Solution 전문 기업입니다.
+                                            환경 Solution 전문 기업입니다.                                                                                        
                                         </div>
                                     </div>
                                 </li>
@@ -264,7 +265,7 @@
                                         <div class="emc_tit">재무정보</div>
                                         <div class="emc_sub">
                                             환경시설관리주식회사의<br>
-                                            재무정보를 확인하실 수 있습니다.
+                                            재무정보를 확인하실 수 있습니다.                                            
                                         </div>
                                     </div>
                                 </li>
@@ -282,7 +283,7 @@
                                         <div class="emc_tit">공시/공고</div>
                                         <div class="emc_sub">
                                             투명하고 정확하게<br>
-                                            공시정보를 공개합니다.
+                                            공시정보를 공개합니다.                                            
                                         </div>
                                     </div>
                                 </li>
@@ -291,4 +292,5 @@
                     </div>
                 </section>
             </div>
-
+            
+            

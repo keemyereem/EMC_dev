@@ -57,7 +57,7 @@
                             <div class="cp_wrap">
                                 <section class="section1" data-aos="fade-up" data-aos-duration="700" data-aos-delay="600">
                                     <div class="s_title_img"><img src="/resources/service/env/images/sustain/cp_tit.png" alt="Voluntary Program"></div>
-                                    <h3>자율준수 프로그램이란?<br><span>(CP, Compliance Program)</span></h3>
+                                    <h3>자율준수 프로그램이란?<br><!--<span>(CP, Compliance Program)</span>--></h3>
                                     <div class="cp_banner">
                                         <p>
                                             자율준수 프로그램은 기업들이 공정거래 관련 법규를 자율적으로 준수하기 위해<br class="br_pc">

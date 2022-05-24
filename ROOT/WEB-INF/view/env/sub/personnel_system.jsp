@@ -253,7 +253,7 @@
                                             <li>
                                                 <div class="dot blue"></div>
                                                 <div class="cont">
-                                                    <div class="txt">차량 승진자 교육</div>
+                                                    <div class="txt">차장 승진자 교육</div>
                                                 </div>
                                             </li>
                                         </ul>

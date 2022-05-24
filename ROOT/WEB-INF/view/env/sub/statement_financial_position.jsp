@@ -48,7 +48,7 @@
                     <div class="sub_contents sub_con">
                         <div class="inner">
                             <div class="tb_top">
-                                <ul class="nav_btn" data-aos="fade-up" data-aos-duration="600" data-aos-offset="200">
+                                <ul class="nav_btn" data-aos="fade-up" data-aos-duration="600">
                                     <li class="on"><a href="/sub.do?MENUID=statement_financial_position&MENUNO=4">재무상태표</a></li>
                                     <li class=""><a href="/sub.do?MENUID=income_statement&MENUNO=4">손익계산서</a></li>
                                 </ul>

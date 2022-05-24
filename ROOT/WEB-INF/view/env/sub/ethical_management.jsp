@@ -47,7 +47,7 @@
                     <div class="sub_contents ethic_contents">
                         <div class="inner">
                             <div class="top">
-                                <ul class="tab_list" data-aos="fade-up" data-aos-duration="600" data-aos-offset="200" data-aos-delay="500">
+                                <ul class="tab_list" data-aos="fade-up" data-aos-duration="600">
                                     <li class="on"><a href="/sub.do?MENUID=ethical_management&MENUNO=3">윤리경영 소개</a></li>
                                     <li class=""><a href="/sub.do?MENUID=tip_off&MENUNO=3">상담/제보</a></li>
                                 </ul>

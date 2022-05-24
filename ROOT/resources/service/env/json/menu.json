@@ -105,7 +105,7 @@
 				},
                 {
 					"title" : "탄소저감",
-	        		"url" : "javascript:link(3,3);",
+	        		"url" : "javascript:linkCarbon(3,3);",
 					"target" : "_self"
 				},
                 {

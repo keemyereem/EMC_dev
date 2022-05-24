@@ -42,7 +42,7 @@
                                 사업영역 확장 및 Synergy 극대화를 통해 <br class="br_m">지속성장이 가능한 ‘종합 환경기업’이 되기 위해 <br class="br_m">노력하고 있습니다.
                             </p>
                             <div class="top">
-                                <ul class="tab_list" data-aos="fade-up" data-aos-duration="600" data-aos-offset="200" data-aos-delay="700">
+                                <ul class="tab_list" data-aos="fade-up" data-aos-duration="600">
                                     <li class=""><a href="/sub.do?MENUID=02_03_0011&MENUNO=2">전체</a></li>
                                     <li class=""><a href="/sub.do?MENUID=02_03_0012&MENUNO=2">열분해 유화</a></li>
                                     <li class="on focus"><a href="/sub.do?MENUID=02_03_0013&MENUNO=2">선별장 O&M</a></li>

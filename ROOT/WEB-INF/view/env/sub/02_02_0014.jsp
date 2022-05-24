@@ -41,7 +41,7 @@
                                 <b>폐기물을 에너지화</b>하고 있습니다. 
                             </p>
                             <div class="top">
-                                <ul class="tab_list" data-aos="fade-up" data-aos-duration="600" data-aos-offset="200" data-aos-delay="700">
+                                <ul class="tab_list" data-aos="fade-up" data-aos-duration="600">
                                     <li class=""><a href="/sub.do?MENUID=02_02_0011&MENUNO=2">개요</a></li>
                                     <li class=""><a href="/sub.do?MENUID=02_02_0012&MENUNO=2">소각</a></li>
                                     <li class=""><a href="/sub.do?MENUID=02_02_0013&MENUNO=2">폐열회수</a></li>
@@ -50,7 +50,7 @@
                             </div>
 
                             <div class="energy_wrap" data-aos="fade-up" data-aos-offset="400">
-                                <p class="s_tit">폐열보일러에서 생산된 증기를 <br class="br_m">전기에너지로 전환하여 <br class="br_pc">자체 활용 및 <br class="br_m">판매하고 있습니다.</p>
+                                <p class="s_tit">폐열보일러에서 생산된 증기를 <br class="br_m">전기에너지로 전환하여 <br class="br_pc">자체 활용 및 <br class="br_m">필요 시설에 외부 공급하고 있습니다.</p>
                                 <div class="img">
                                     <div class="tag">폐열발전</div>
                                     <img src="/resources/service/env/images/business/energy04_img01.png" alt="energy04_img01">

@@ -47,7 +47,7 @@
                     <div class="sub_contents sub_con">
                         <div class="inner">
                             <div class="tb_top">
-                                <ul class="nav_btn" data-aos="fade-up" data-aos-duration="600" data-aos-offset="200">
+                                <ul class="nav_btn" data-aos="fade-up" data-aos-duration="600">
                                     <li class="on"><a href="/env/sub.do?MENUID=safety_health&MENUNO=3">안전보건 소개</a></li>
                                     <li class=""><a href="/env/sub.do?MENUID=proposal&MENUNO=3">건의/제보</a></li>                                    
                                 </ul>

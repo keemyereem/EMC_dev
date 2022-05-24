@@ -7,7 +7,7 @@
 <div class="header"></div>
 
 	<form name="headerForm" id="headerForm" method="post">
-		<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
+		<input type="hidden" name="<c:out value ='${_csrf.parameterName}'/>" value="<c:out value ='${_csrf.token}'/>" />
 	</form>
 	<script type="text/javascript">
       function onLogout(logoutUrl){

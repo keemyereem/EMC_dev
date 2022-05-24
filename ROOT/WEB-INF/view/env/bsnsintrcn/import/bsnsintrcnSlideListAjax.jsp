@@ -8,7 +8,7 @@
 	                                    <c:if test="${webResult.params.searchClCode eq 'A012003' or webResult.params.searchClCode eq 'A012009'}">
 	                                    <%// 첫번재 카테고리 만 %>
                                     
-										<div class="swiper_2depth_tabs" data-aos="fade" data-aos-duration="700" data-aos-offset="300">
+										<div class="swiper_2depth_tabs" data-aos="fade" data-aos-duration="700" data-aos-offset="600">
                                             <c:forEach var="item" items="${listBsnsintrcnCategory}" varStatus="i" >
                                             	<c:set var="ctgryNm" value="${item.ctgryNm }" />
                                             	<c:if test="${locale eq 'en'}"><c:set var="ctgryNm" value="${item.ctgryEngNm }" /></c:if>
@@ -27,7 +27,7 @@
 										<c:set var="divNo" value="${j.count}" />
 										
 										<div class="swiper1_box swiper1_box0<c:out value="${divNo}" />" style="display: <c:if test="${divNo ne webResult.params.slide_no }">none;</c:if>">
-                                            <div class="swiper swiper1_0<c:out value="${divNo}" />" data-aos="fade-left" data-aos-duration="700" data-aos-offset="300">
+                                            <div class="swiper swiper1_0<c:out value="${divNo}" />" data-aos="fade-left" data-aos-duration="700" data-aos-offset="500">
                                                 
                                                 <div class="swiper-wrapper">
                                                     
@@ -58,7 +58,7 @@
                                         
                                         </c:when>
                                         <c:otherwise>
-                                        	                    
+                                        	
                                         	<!-- list start -->
                                             <c:forEach var="item" items="${webResult.listPage.listMap}" varStatus="i" >                                                    
 						                        <div class="swiper-slide">
@@ -74,8 +74,7 @@
 						                            </div>
 						                        </div>
 			                                  </c:forEach>
-                                             <!-- list start end-->                                           
-                                              
+                                             <!-- list start end--> 
                                        </c:otherwise>
                                       </c:choose>      
                                              

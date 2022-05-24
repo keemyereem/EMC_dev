@@ -72,7 +72,7 @@
                                 <p>
                                     환경시설관리주식회사는 독거노인 및 소년∙소녀가장 등 취약계층의 든든한 친구가 되고자 <br>
                                     “깨끗함”과 “따뜻함”을 모티브로 한 ‘이불빨래’와 ‘단열캡(일명 뾱뾱이)’ 활동을 시작 하였습니다.<br>
-                                    행복과 따뜻한 기운이 전국적으로 확대되기를 바라는 마음으로 매일 매일 ‘해피바이러스 이야기’를 써나가고 있습니다.<br>
+                                    행복과 따뜻한 기운이 전국적으로 확대되기를 바라는 마음으로 매일 매일 ‘해피 emc 이야기’를 써나가고 있습니다.<br>
                                     환경시설관리주식회사의 임직원들은 환경을 보호하는 기업의 일원으로서 국가와 사회에 기여한다는 <br>
                                     자부심을 다른 어떤 기업에서도 느낄 수 없는 소중한 가치로 삼으며, 다양한 사회공헌활동에 모두 적극적으로 참여하고 있습니다.
                                 </p>
@@ -132,7 +132,7 @@
                         <section class="section2" data-aos="fade-up" data-aos-offset="500">
                             <div class="sc_desc">
                                 <p><img src="/resources/service/env/images/sustain/SC_major_tit.png" alt="SC_major_tit"></p>
-                                <h3 class="title">주요활동</h3>
+                                <h3 class="title">해피 emc 이야기</h3>
                             </div>
                             <div class="sc_obj">
                                 <ul>
@@ -191,7 +191,7 @@
                             <section class="section3">
                                 <div class="sc_desc" data-aos="fade-up" data-aos-offset="300">
                                     <p><img src="/resources/service/env/images/sustain/SC_news_tit.png" alt="SC_news_tit"></p>
-                                    <h3 class="title">소식</h3>
+                                    <h3 class="title">나눔 발자취</h3>
                                 </div>
 			                    <div class="irsearch_contents">
 			                        <div class="inner">
