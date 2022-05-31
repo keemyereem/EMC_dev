@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="carbonReduc">
+
+    <select id="getCarbonReductMainDtl" resultType="egovMap">
+
+        SELECT B.*
+                    , B.SOLAR_DVLP_RESULT + B.DIGSTNTAK_DVLP_RESULT + B.DIGSTNGAS_DVLP_RESULT + B.STEAM_DVLP_RESULT + B.ETC_DVLP_RESULT AS TOTAL_RESULT_SUM
+                    , ROUND( (B.SOLAR_DVLP_RESULT + B.DIGSTNTAK_DVLP_RESULT + B.DIGSTNGAS_DVLP_RESULT + B.STEAM_DVLP_RESULT + B.ETC_DVLP_RESULT) / B.GRAPH_GOAL * 100, 2 ) AS TOTAL_GOAL_RATE
+
+            FROM (
+
+                   SELECT ROUND(A.SOLAR_DVLP_ALIVE_RATE * UNTIL_NOW_TIME_SEC) AS SOLAR_DVLP_RESULT
+                            , ROUND(A.DIGSTNTAK_REVIVGAS_ALIVE_RATE * UNTIL_NOW_TIME_SEC) AS DIGSTNTAK_DVLP_RESULT
+                            , ROUND(A.DIGSTNGAS_DVLP_ALIVE_RATE * UNTIL_NOW_TIME_SEC) AS DIGSTNGAS_DVLP_RESULT
+                            , ROUND(A.STEAM_DVLP_ALIVE_RATE * UNTIL_NOW_TIME_SEC) AS STEAM_DVLP_RESULT
+                            , ROUND(A.ETC_DVLP_ALIVE_RATE * UNTIL_NOW_TIME_SEC) AS ETC_DVLP_RESULT
+
+                            , A.GRAPH_GOAL
+
+                            , A.SOLAR_DVLP_ALIVE_RATE
+                            , A.DIGSTNTAK_REVIVGAS_ALIVE_RATE
+                            , A.DIGSTNGAS_DVLP_ALIVE_RATE
+                            , A.STEAM_DVLP_ALIVE_RATE
+                            , A.ETC_DVLP_ALIVE_RATE
+
+                            , A.SOLAR_DVLP
+                            , A.DIGSTNTAK_REVIVGAS
+                            , A.DIGSTNGAS_DVLP
+                            , A.STEAM_DVLP
+                            , A.ETC_DVLP
+                            , A.SJ
+
+                    FROM (
+
+                       SELECT ( DAYOFYEAR(NOW()) * 86400 ) + ( TIME_TO_SEC(CURRENT_TIME()) ) AS UNTIL_NOW_TIME_SEC  -- 현재 시간 까지의 초
+
+                                    , SUB.SOLAR_DVLP / 365 / 24 / 60 / 60 AS SOLAR_DVLP_ALIVE_RATE -- 태양광 : 1초에 살린 소나무 수 (1년)
+                                    , SUB.DIGSTNTAK_REVIVGAS  / 365 / 24 / 60 / 60 AS DIGSTNTAK_REVIVGAS_ALIVE_RATE -- 소화조 재생가스 : 1초에 살린 소나무 수 (1년)
+                                    , SUB.DIGSTNGAS_DVLP / 365 / 24 / 60 / 60 AS DIGSTNGAS_DVLP_ALIVE_RATE -- 소화가스 발전 : 1초에 살린 소나무 수 (1년)
+                                    , SUB.STEAM_DVLP / 365 / 24 / 60 / 60 AS STEAM_DVLP_ALIVE_RATE -- 스팀생산 : 1초에 살린 소나무 수 (1년)
+                                    , SUB.ETC_DVLP / 365 / 24 / 60 / 60 AS ETC_DVLP_ALIVE_RATE -- 기타 : 1초에 살린 소나무 수 (1년)
+
+                                    , SUB.GRAPH_GOAL
+
+                                    , SUB.SOLAR_DVLP
+                                    , SUB.DIGSTNTAK_REVIVGAS
+                                    , SUB.DIGSTNGAS_DVLP
+                                    , SUB.STEAM_DVLP
+                                    , SUB.ETC_DVLP
+                                    , SUB.SJ
+
+                        FROM TB_CARBON_REDUCTION SUB
+                     WHERE SUB.DELETE_AT ='N'
+                       AND SUB.NTT_NO    = #{nttNo}
+                       AND SUB.LANG_CODE = #{langCode}
+
+                   ) A
+
+        ) B
+
+        <!--
+            SELECT A.*
+              ,DATE_FORMAT(NOW(),'%Y.%m.%d %H:%i') AS DATE
+              ,FORMAT(TOTAL_CURRENT_PINE/A.GRAPH_GOAL*100,2) AS TOTAL_PERSENT
+
+              ,FORMAT((SOLAR_CURRENT_PINE+DIGSTNTAK_CURRENT_PINE+DIGSTNGAS_CURRENT_PINE+STEAM_CURRENT_PINE+ETC_CURRENT_PINE)/A.GRAPH_GOAL*100,2) AS CARBON_PERCENTAGE
+              ,(SOLAR_CURRENT_PINE+DIGSTNTAK_CURRENT_PINE+DIGSTNGAS_CURRENT_PINE+STEAM_CURRENT_PINE+ETC_CURRENT_PINE) AS TOTAL_PINE
+
+              ,FORMAT((SOLAR_PREV_PINE+DIGSTNTAK_PREV_PINE+DIGSTNGAS_PREV_PINE+STEAM_PREV_PINE+ETC_PREV_PINE)/A.GRAPH_GOAL*100,2) AS PREV_CARBON_PERCENTAGE
+              ,(SOLAR_PREV_PINE+DIGSTNTAK_PREV_PINE+DIGSTNGAS_PREV_PINE+STEAM_PREV_PINE+ETC_PREV_PINE) AS PREV_TOTAL_PINE
+         FROM
+              (SELECT B.*,
+                      ROUND((B.PINE_QUATER_SOLAR+B.PINE_QUATER_DIGSTNTAK+B.PINE_QUATER_DIGSTNGAS+B.PINE_QUATER_STEAM+B.PINE_QUATER_ETC)/91/24/60/60*((DAYOFYEAR(NOW())-1)*24*60*60+TIME_TO_SEC(CURRENT_TIME()))) AS TOTAL_CURRENT_PINE,
+
+                      ROUND((B.PINE_QUATER_SOLAR/365/24/60/60)*(((DAYOFYEAR(NOW())-1)*24*60*60)+TIME_TO_SEC(CURRENT_TIME()))) AS SOLAR_CURRENT_PINE,
+                      ROUND((B.PINE_QUATER_DIGSTNTAK/365/24/60/60)*(((DAYOFYEAR(NOW())-1)*24*60*60)+TIME_TO_SEC(CURRENT_TIME()))) AS DIGSTNTAK_CURRENT_PINE,
+                      ROUND((B.PINE_QUATER_DIGSTNGAS/365/24/60/60)*(((DAYOFYEAR(NOW())-1)*24*60*60)+TIME_TO_SEC(CURRENT_TIME()))) AS DIGSTNGAS_CURRENT_PINE,
+                      ROUND((B.PINE_QUATER_STEAM/365/24/60/60)*(((DAYOFYEAR(NOW())-1)*24*60*60)+TIME_TO_SEC(CURRENT_TIME()))) AS STEAM_CURRENT_PINE,
+                      ROUND((B.PINE_QUATER_ETC/365/24/60/60)*(((DAYOFYEAR(NOW())-1)*24*60*60)+TIME_TO_SEC(CURRENT_TIME()))) AS ETC_CURRENT_PINE,
+
+                      ROUND((B.PINE_LASTYEAR_SOLAR/365/24/60/60)*(((DAYOFYEAR(NOW())-1)*24*60*60)+TIME_TO_SEC(CURRENT_TIME()))) AS SOLAR_PREV_PINE,
+                      ROUND((B.PINE_LASTYEAR_DIGSTNTAK/365/24/60/60)*(((DAYOFYEAR(NOW())-1)*24*60*60)+TIME_TO_SEC(CURRENT_TIME()))) AS DIGSTNTAK_PREV_PINE,
+                      ROUND((B.PINE_LASTYEAR_DIGSTNGAS/365/24/60/60)*(((DAYOFYEAR(NOW())-1)*24*60*60)+TIME_TO_SEC(CURRENT_TIME()))) AS DIGSTNGAS_PREV_PINE,
+                      ROUND((B.PINE_LASTYEAR_STEAM/365/24/60/60)*(((DAYOFYEAR(NOW())-1)*24*60*60)+TIME_TO_SEC(CURRENT_TIME()))) AS STEAM_PREV_PINE,
+                      ROUND((B.PINE_LASTYEAR_ETC/365/24/60/60)*(((DAYOFYEAR(NOW())-1)*24*60*60)+TIME_TO_SEC(CURRENT_TIME()))) AS ETC_PREV_PINE
+
+                 FROM TB_CARBON_REDUCTION B
+                WHERE DELETE_AT ='N'
+                  AND NTT_NO    = #{nttNo}
+                  AND LANG_CODE = #{langCode}
+              ) A
+      -->
+    </select>
+    
+    <select id="getCarbonReductDtl" resultType="egovMap">
+        SELECT A.*
+        FROM TB_CARBON_REDUCTION A
+        WHERE A.DELETE_AT ='N'
+          AND A.NTT_NO    = #{nttNo}
+          AND A.LANG_CODE = #{langCode}
+    </select>
+</mapper>
