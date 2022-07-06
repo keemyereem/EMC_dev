@@ -58,7 +58,7 @@
                                                 <img src="/resources/service/env/images/business/onm_icon02_on.png" alt="onm_icon02_on">
                                             </div>
                                             <p class="nav_tit">
-                                                폐기물<br/>
+                                                공공 폐기물<br/>
                                                 처리시설                                            
                                             </p>
                                         </a>

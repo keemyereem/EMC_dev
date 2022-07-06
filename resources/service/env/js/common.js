@@ -1,5 +1,12 @@
 
 $(function(){
+    // sub페이지 로딩 후 display 출력
+    (function(H){
+        H.className=H.className.replace(/\bno-js\b/,'js')
+    })
+    (document.documentElement)
+
+
     var w = $(window).width();
 	responsiveImage(w);
 
@@ -37,12 +44,15 @@ $(function(){
         const aos_order2 = document.querySelector('.tit_line');
 
         // 페이지 타이틀, 라인, 설명 각각 모션효과 종료될 때 다음 모션 진행하도록
-        aos_order1.addEventListener('transitionend', () => {
-            $(aos_order2).addClass('on');
-            aos_order2.addEventListener('transitionend', () => {
-                $('.sub_con').addClass('on');
+        if ($('.tit_line').length) {
+            aos_order1.addEventListener('transitionend', () => {
+                $(aos_order2).addClass('on');
+                aos_order2.addEventListener('transitionend', () => {
+                    $('.sub_con').addClass('on');
+                });
             });
-        });
+        }
+        
     }
 
 });
@@ -253,7 +263,7 @@ $(".swiper").each(function(index,){
     var add_depth_calc2 = index - (Tabs_depth2.length - 2);
     $this.addClass('swiper' + add_depth_calc2);
 
-    var swiper = new Swiper('.swiper' + add_depth_calc2, {
+    swiper = new Swiper('.swiper' + add_depth_calc2, {
         observer: true,
         observeParents: true,
         slidesPerView : 2,
@@ -282,7 +292,7 @@ $(".swiper").each(function(index,){
             // 탭버튼 function
             Tabs.on("click", function() {
 
-                console.log(index);
+                // console.log(index);
                 // 탭 버튼 CSS 액티브 효과
                 $(this).addClass('on');
                 $(this).siblings().removeClass('on');
@@ -307,7 +317,6 @@ $(".swiper").each(function(index,){
                     // 첫번째 슬라이드 컨테이너 내부 2Depth 탭 초기화(첫번째로)
                     Tabs_depth2.removeClass('on');
                     Tabs_depth2.eq(0).addClass('on');
-                    swiper1.slideTo(0, 0);
 
                 }, 0);
 
@@ -316,7 +325,12 @@ $(".swiper").each(function(index,){
                 $('.section3 .onm_list0' + Tabs_idx).addClass('on');
 
                 // 모든 슬라이드 컨테이너 첫번째 슬라이드로 초기화
-                swiper.slideTo(0, 0);
+                if (swiper.length) {
+                    swiper.slideTo(0, 0);
+                    swiper1.slideTo(0);
+                }
+                
+                
 
             });
 
@@ -325,7 +339,7 @@ $(".swiper").each(function(index,){
                 // 클릭한 2depth 탭 버튼 인덱스 값 추출 및 같은 인덱스값의 슬라이드 컨테이너 추적
                 var idx = Tabs_depth2.index(this)+1;
                 var tab_slide = $(this).parent().siblings('.swiper1_box');
-
+                
                 // 2depth 탭 버튼 CSS 액티브 효과
                 Tabs_depth2.removeClass('on');
                 $(this).addClass('on');
@@ -338,11 +352,12 @@ $(".swiper").each(function(index,){
                 setTimeout(function() {
                     // 2depth 클릭요소의 슬라이드 컨테이너 AOS 모션 초기화
                     $('.swiper1_box0' + idx + ' .swiper').addClass('aos-animate');
-
-                    // 2depth 모든 슬라이드 컨테이너 첫번째 슬라이드로 초기화
-                    swiper1.slideTo(0, 0);
                 }, 0);
 
+                // 2depth 모든 슬라이드 컨테이너 첫번째 슬라이드로 초기화
+                if ($('.swiper1_0' + index).length) {
+                    swiper1.slideTo(0);
+                }
             });
         });
     },
@@ -479,11 +494,13 @@ var rndEvent = {
 
     focusTab: function() {
         $(document).ready(function() {
-            const focused = document.querySelector('.focus')
+            const focused = document.querySelector('.focus');
+
+            if ($('.focus').length && $(window).width() < 768) {
                 setTimeout (function() {
                     focused.scrollIntoView({behavior: "smooth", block: "nearest", inline: "end"});
                 }, 0)
-
+            }
         })
 
     }

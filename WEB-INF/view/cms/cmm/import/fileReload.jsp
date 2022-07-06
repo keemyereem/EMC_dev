@@ -4,4 +4,4 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="code" uri="/WEB-INF/tlds/codeUtils.tld"%>
-<code:upload name="${webResult.obj.name }" id="${webResult.obj.id }" fileCode="${webResult.obj.fileCode }" maxFileCount="${webResult.obj.maxFileCount }" title="파일 추가" value="${webResult.obj.fileId }" isAjax="true" isViweImage="${webResult.obj.isViweImage }" />
+<code:upload name="<c:out value ='${webResult.obj.name }'/>" id="<c:out value ='${webResult.obj.id}'/>" fileCode="<c:out value ='${webResult.obj.fileCode}'/>"  maxFileCount="<c:out value ='${webResult.obj.maxFileCount }'/>" title="파일 추가" value="<c:out value ='${webResult.obj.fileId }'/>" isAjax="true" isViweImage="<c:out value ='${webResult.obj.isViweImage}'/>" />

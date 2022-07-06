@@ -43,7 +43,7 @@
                                 <img src="/resources/service/env/images/recruit/hiring_process_tit.png" alt="Hiring process">
                                 <img src="/resources/service/env/images/recruit/hiring_process_tit_m.png" alt="Hiring process">
                             </div>
-                            <h3 data-aos="fade-up" data-aos-offset="400">채용프로세스</h3>
+                            <h3 data-aos="fade-up" data-aos-offset="400">채용 프로세스</h3>
                             <p data-aos="fade-up" data-aos-offset="400">환경시설관리주식회사의 신규임용은 수시채용이며,<br> 온라인을 통해 상시 지원 가능합니다.</p>
                         </section>
                         <section class="section2">
@@ -53,8 +53,8 @@
                                     <div class="cont">
                                         <div class="icon"><img src="/resources/service/env/images/recruit/recruit_process_icon01.png" alt="01.서류모집 아이콘"></div>
                                         <ul class="txt">
-                                            <li>채용 사이트 및</li>
-                                            <li>담당자 Email 지원 접수</li>
+                                            <li>채용 사이트 및<br>
+                                            담당자 Email 지원 접수</li>
                                         </ul>
                                     </div>
                                 </li>
@@ -63,8 +63,8 @@
                                     <div class="cont">
                                         <div class="icon"><img src="/resources/service/env/images/recruit/recruit_process_icon02.png" alt="01.서류모집 아이콘"></div>
                                         <ul class="txt">
-                                            <li>지원자격 및 자기소개서</li>
-                                            <li>기반 심층평가 진행</li>
+                                            <li>지원자격 및 자기소개서<br>
+                                            기반 심층평가 진행</li>
                                         </ul>
                                     </div>
                                 </li>
@@ -83,7 +83,7 @@
                                     <div class="cont">
                                         <div class="icon"><img src="/resources/service/env/images/recruit/recruit_process_icon04.png" alt="01.서류모집 아이콘"></div>
                                         <ul class="txt">
-                                            <li>직무에 따라 다양한<br class="br_pc">형태의 면접 시행</li>
+                                            <li>직무에 따라 다양한<br class="br_pc"> 형태의 면접 시행</li>
                                         </ul>
                                     </div>
                                 </li>                                

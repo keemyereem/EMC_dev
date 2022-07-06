@@ -19,7 +19,7 @@
                         </a>
                     </div>
                     <div class="sub_visual_nav_next">
-                        <a href="javascript:link(4,0);" title="다음메뉴로 이동">
+                        <a href="javascript:linkBBS(4,0, 'BM0000000006');" title="다음메뉴로 이동">
                             <img src="/resources/service/env/images/common/sub_visual_nav_next.png" alt="sub_visual_nav_next">
                             <span>IR</span>
                         </a>

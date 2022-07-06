@@ -4,7 +4,7 @@
 <%@ taglib prefix="code" uri="/WEB-INF/tlds/codeUtils.tld"%>
 <%@ taglib prefix="file" uri="/WEB-INF/tlds/fileLib.tld"%>
 
-<form name="mainForm" id="mainForm" method="post">
+<form name="mainForm" id="mainForm" method="get">
     <input type="hidden" name="<c:out value='${_csrf.parameterName}' />" value="<c:out value='${_csrf.token}' />" />
     <input type="hidden" id="bbsNo" name="bbsNo" value="<c:out value="${bbsMstDtl.bbsNo}" />" />
     <input type="hidden" id="nttNo" name="nttNo" />

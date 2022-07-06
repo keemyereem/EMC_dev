@@ -74,7 +74,7 @@
                                     </p>
                                 </section>
                                 <section class="section2" data-aos="fade-up" data-aos-offset="400">
-                                    <p class="tit_green">[SMART 통합운영자산관리시스템의] 개요</p>
+                                    <p class="tit_green">[SMART 통합운영자산관리시스템]의 개요</p>
                                     <div class="s_con">
                                         <div class="top">
                                             <img src="/resources/service/env/images/business/method01_img01.png" alt="SMART 통합운영자산관리시스템의 개요">

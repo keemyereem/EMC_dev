@@ -387,17 +387,29 @@
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
                                                 <div class="onm_slide_img">
+                                                    <img src="/resources/service/env/images/business/onm_slide03_img03.png" alt="민간폐수처리처리시설 이미지" />
+                                                </div>
+                                                <div class="onm_slide_text_box">
+                                                    <h3>Cheongju SK hynix</h3>
+                                                    <div>
+                                                        <dl><dt>Capacity</dt><dd>145,200㎥/day</dd></dl>
+                                                        <dl><dt>Development of process control</dt><dd>coagulative precipitation, Bardenpho etc</dd></dl>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="onm_slide_img">
                                                     <img src="/resources/service/env/images/business/onm_slide03_img01.png" alt="민간폐수처리처리시설 이미지" />
                                                 </div>
                                                 <div class="onm_slide_text_box">
-                                                    <h3>Operation of Kolon Gumi Wastewater Treatment Facility </h3>
+                                                    <h3>Operation of Kolon Gumi Wastewater Treatment Facility</h3>
                                                     <div>
                                                         <dl><dt>Capacity</dt><dd>15,000㎥/day</dd></dl>
                                                         <dl><dt>Development of process control</dt><dd>KIMAS/CAS</dd></dl>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="swiper-slide">
+                                            <!-- <div class="swiper-slide">
                                                 <div class="onm_slide_img">
                                                     <img src="/resources/service/env/images/business/onm_slide03_img02.png" alt="민간폐수처리처리시설 이미지" />
                                                 </div>
@@ -408,19 +420,7 @@
                                                         <dl><dt>Development of process control</dt><dd>EGSB+CAS</dd></dl>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="onm_slide_img">
-                                                    <img src="/resources/service/env/images/business/onm_slide03_img03.png" alt="민간폐수처리처리시설 이미지" />
-                                                </div>
-                                                <div class="onm_slide_text_box">
-                                                    <h3>Cheongju SKhynix</h3>
-                                                    <div>
-                                                        <dl><dt>Capacity</dt><dd>-</dd></dl>
-                                                        <dl><dt>Development of process control</dt><dd>-</dd></dl>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                     <div class="onm_box_slider_button" data-aos="fade-up" data-aos-duration="700">

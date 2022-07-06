@@ -55,8 +55,7 @@ var memberCountConTxt2_prev= '<c:out value="${retMap.prevTotalPine}" />';    // 
 </script>
     <script type="text/javascript" src="/resources/service/env/js/common.js"></script>
     <script type="text/javascript" src="/resources/service/cms/js/jquery/jquery.validate.min.js"></script>
-    
-<script type="text/javascript" src="/resources/service/env/js/jsonData.js"></script>
+
 <script type="text/javascript" src="/resources/service/env/js/ui.js"></script>
 <script type="text/javascript" src="/resources/service/cms/js/common/ajaxScript.js"></script>
 <script type="text/javascript" src="/resources/service/cms/js/common/commonUtil.js"></script>

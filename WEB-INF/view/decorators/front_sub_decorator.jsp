@@ -4,7 +4,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <%@ taglib uri="http://www.opensymphony.com/sitemesh/page" prefix="page" %>
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" class="no-js">
 <head>
 <c:choose>
 <c:when test="${SITE_TYPE eq '/en' }">
@@ -12,6 +12,22 @@
 </c:when>
 <c:otherwise>
 <jsp:include page="/WEB-INF/view/decorators/common/head_decorator.jsp"></jsp:include>
+</c:otherwise>
+</c:choose>
+<script type="text/javascript">
+	$(document).ready( function() {
+        //html용 include
+    	 //$(".header").load("${SITE_TYPE }/env/import/headerAjax.do");
+	     //$(".sitemap").load("${SITE_TYPE }/env/import/sitemapAjax.do");
+	     $(".footer").load("${SITE_TYPE }/env/import/footerAjax.do");
+    });
+</script>
+<c:choose>
+<c:when test="${SITE_TYPE eq '/en' }">
+<script type="text/javascript" src="/resources/service/env_eng/js/jsonData.js"></script>
+</c:when>
+<c:otherwise>
+<script type="text/javascript" src="/resources/service/env/js/jsonData.js"></script>
 </c:otherwise>
 </c:choose>
 
@@ -30,15 +46,20 @@
 
 	<div class="skip_navigation"><a href="#contents" title="본문으로 이동">Skip to the menu / 본문가기</a></div>
     <!-- wrap -->
-    <div class="wrap">
+    <div class="wrap" id="fouc">
         <!-- header -->
+        <div class="header">
+        	<c:import url="${SITE_TYPE }/env/import/headerAjax.do" />
+        </div>
         <c:import url="/WEB-INF/view/decorators/common/header_decorator.jsp" />
         <!-- //header -->
         
         <!-- sitemap -->
         <div class="dim"></div>
         <div class="sitemap_bg"></div>
-        <div class="sitemap"></div>
+        <div class="sitemap">
+	        <c:import url="${SITE_TYPE }/env/import/sitemapAjax.do" />
+        </div>
         <!-- //sitemap -->
         
 <c:choose>
@@ -62,9 +83,12 @@
     <script>
          // 기존 head_decorator 위치 => 현재 위치로 변경
          // document.ready로 하면 출력 안될 경우가 있음
-	     $(".header").load("${SITE_TYPE }/env/import/headerAjax.do");
-	     $(".sitemap").load("${SITE_TYPE }/env/import/sitemapAjax.do");
-	     $(".footer").load("${SITE_TYPE }/env/import/footerAjax.do");	     
+	     //$(".header").load("${SITE_TYPE }/env/import/headerAjax.do");
+	     //$(".sitemap").load("${SITE_TYPE }/env/import/sitemapAjax.do");
+	     //$(".footer").load("${SITE_TYPE }/env/import/footerAjax.do");         
+         // 페이지 로딩 후 display 출력
+         document.getElementById("fouc").style.display="block";
+
     </script>
     
 </body>    

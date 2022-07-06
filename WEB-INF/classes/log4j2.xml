@@ -4,9 +4,9 @@
 		<Console name="console" target="SYSTEM_OUT">
 			<PatternLayout pattern="%d %5p [%c] %m%n" />
 		</Console>
-		<appender name="console-dblog" class="org.apache.log4j.ConsoleAppender">
+		<!-- <appender name="console-dblog" class="org.apache.log4j.ConsoleAppender">
              <PatternLayout pattern="%d %5p %m%n" />
-        </appender>
+        </appender> -->
 	</Appenders>
 
 	<Loggers>

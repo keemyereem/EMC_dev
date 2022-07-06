@@ -3,9 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
-
-<div class="header"></div>
-
+ 
 	<form name="headerForm" id="headerForm" method="post">
 		<input type="hidden" name="<c:out value ='${_csrf.parameterName}'/>" value="<c:out value ='${_csrf.token}'/>" />
 	</form>

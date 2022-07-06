@@ -37,14 +37,14 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="bg bg04">
-                                    <video id="mainvideo03" src="/resources/service/env/videos/098171513_main_xl.mp4" playsinline muted loop autoplay data-keepplaying class="video_bg"></video>
+                                    <video id="mainvideo04" src="/resources/service/env/videos/098171513_main_xl.mp4" playsinline muted loop autoplay data-keepplaying class="video_bg"></video>
                                 </div>
                             </div>
                         </div>
                     </div>  
                     <div class="naviPlay">
                         <span class="naviAuto">
-                            <a href="javascript:;" class="autoplay"><img src="/resources/service/env/images/common/icon_pause.png" /></a>
+                            <a href="javascript:;" class="autoplay"><img src="/resources/service/env/images/common/icon_pause.png" alt="일시정지"/></a>
                         </span>
                         <span id="fPrev" class="arrow left swiper-button-prev"><a href="javascript:;"><img src="/resources/service/env/images/common/icon_left.png" alt="이전 슬라이드" /></a></span>
                         <span id="fNext" class="arrow right swiper-button-next"><a href="javascript:;"><img src="/resources/service/env/images/common/icon_right.png" alt="다음 슬라이드" /></a></span>
@@ -143,11 +143,11 @@
                         </p>
                     </div> 
                     <div class="sustain_list">
-                        <img src="/resources/service/env/images/main/s3_bg01.png" alt="" class="s3_bg01">
-                        <img src="/resources/service/env/images/main/s3_bg02.png" alt="" class="s3_bg02">
-                        <img src="/resources/service/env/images/main/s3_bg03.png" alt="" class="s3_bg03">
-                        <img src="/resources/service/env/images/main/s3_bg04.png" alt="" class="s3_bg04">
-                        <img src="/resources/service/env/images/main/s3_bg05.png" alt="" class="s3_bg05">
+                        <img src="/resources/service/env/images/main/s3_bg01.png" alt="윤리경영_배경" class="s3_bg01">
+                        <img src="/resources/service/env/images/main/s3_bg02.png" alt="안전보건_배경" class="s3_bg02">
+                        <img src="/resources/service/env/images/main/s3_bg03.png" alt="공정거래자율준수프로그램_배경" class="s3_bg03">
+                        <img src="/resources/service/env/images/main/s3_bg04.png" alt="탄소저감_배경" class="s3_bg04">
+                        <img src="/resources/service/env/images/main/s3_bg05.png" alt="사회공헌_배경" class="s3_bg05">
                         <div class="swiper-container">
                             <ul class="swiper-wrapper">
                                 <li class="swiper-slide">

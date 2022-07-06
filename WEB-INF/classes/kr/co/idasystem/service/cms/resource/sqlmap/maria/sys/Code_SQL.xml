@@ -9,7 +9,7 @@
 			COD.CODE , /* 코드 */
 			COD.UPPER_CODE , /* 상위_코드 */
 			CASE WHEN CLA.CODE_NM IS NULL THEN COD.CODE_NM ELSE CLA.CODE_NM END AS CODE_NM , /* 코드_명 */
-			
+
 			COD.CODE_DC , /* 코드_설명 */
 			COD.ADIT_VALUE_ONE , /* 추가_값_1 */
 			COD.ADIT_VALUE_TWO , /* 추가_값_2 */
@@ -43,7 +43,7 @@
 			COD.CODE , /* 코드 */
 			COD.UPPER_CODE , /* 상위_코드 */
 			CASE WHEN CLA.CODE_NM IS NULL THEN COD.CODE_NM ELSE CLA.CODE_NM END AS CODE_NM , /* 코드_명 */
-			
+
 			COD.CODE_DC , /* 코드_설명 */
 			COD.ADIT_VALUE_ONE , /* 추가_값_1 */
 			COD.ADIT_VALUE_TWO , /* 추가_값_2 */
@@ -80,14 +80,14 @@
 			COD.CODE , /* 코드 */
 			COD.UPPER_CODE , /* 상위_코드 */
 			CASE WHEN CLA.CODE_NM IS NULL THEN COD.CODE_NM ELSE CLA.CODE_NM END AS CODE_NM , /* 코드_명 */
-			
+
 			COD.CODE_DC , /* 코드_설명 */
 			COD.ADIT_VALUE_ONE , /* 추가_값_1 */
 			COD.ADIT_VALUE_TWO , /* 추가_값_2 */
 			COD.ADIT_VALUE_THREE , /* 추가_값_3 */
 			COD.USE_AT , /* 사용_여부 */
 			COD.DELETE_AT , /* 삭제_여부 */
-			COD.EXPSR_ORDR , /* 노출_순서 */			
+			COD.EXPSR_ORDR , /* 노출_순서 */
 			DATE_FORMAT(COD.FRST_REGIST_DT,'%Y-%m-%d %H:%i:%s') FRST_REGIST_DT , /* 최초_등록_일시 */
 			COD.FRST_REGISTER_ID , /*
 			최초_등록자_아이디 */
@@ -95,7 +95,7 @@
 			COD.LAST_UPDUSR_ID , /* 마지막_수정자_아이디 */
 			COD.CODE AS id , /* 트리에 사용될 ID */
 			CASE WHEN CLA.CODE_NM IS NULL THEN COD.CODE_NM ELSE CLA.CODE_NM END AS text, /* 트리에 사용될 Text */
-			
+
 			IFNULL(COD.UPPER_CODE, '#') AS parent ,
 			IFNULL(UP_COD.CODE_NM, '최상위 코드') AS UPPER_CODE_NM
 		FROM
@@ -149,12 +149,12 @@
 	</select>
 
 	<insert id="megerCode" >
-	INSERT INTO CO_CODE ( 
-		CODE,UPPER_CODE,CODE_NM,CODE_DC,ADIT_VALUE_ONE,ADIT_VALUE_TWO,ADIT_VALUE_THREE,USE_AT,DELETE_AT,EXPSR_ORDR,FRST_REGIST_DT,FRST_REGISTER_ID, LAST_UPDT_DT, LAST_UPDUSR_ID 
-	) VALUES ( 
+	INSERT INTO CO_CODE (
+		CODE,UPPER_CODE,CODE_NM,CODE_DC,ADIT_VALUE_ONE,ADIT_VALUE_TWO,ADIT_VALUE_THREE,USE_AT,DELETE_AT,EXPSR_ORDR,FRST_REGIST_DT,FRST_REGISTER_ID, LAST_UPDT_DT, LAST_UPDUSR_ID
+	) VALUES (
 		#{code}, #{upperCode}, #{codeNm}, #{codeDc}, #{aditValueOne}, #{aditValueTwo}, #{aditValueThree},#{useAt},#{deleteAt},
 		( SELECT MAX(A.EXPSR_ORDR) + 1 FROM CO_CODE A)
-		,now(),#{mngrId},now(),#{mngrId}   
+		,now(),#{mngrId},now(),#{mngrId}
 	)
 	ON DUPLICATE KEY UPDATE
 			  CODE_NM 		 	= #{codeNm}
@@ -166,7 +166,7 @@
 			, DELETE_AT 		= #{deleteAt}
 			, LAST_UPDT_DT 		= now()
 			, LAST_UPDUSR_ID	= #{mngrId}
-		
+
 	</insert>
 
 	<delete id="deleteCodeLang" >
@@ -248,7 +248,7 @@
     <update id="changeCodeOrder" >
         UPDATE CO_CODE
             SET UPPER_CODE = #{upperCode}
-                , EXPSR_ORDR = ${expsrOrdr}
+                , EXPSR_ORDR = #{expsrOrdr}
         WHERE
             CODE = #{code}
     </update>

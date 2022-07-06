@@ -73,6 +73,32 @@ function linkCarbon(idx , num){
  * 3,0,5: 지속가능경영 > 윤리경영 > 상담/제보 > 제보자 보호규정
  * */
 function fnfileDownLoad(idx, num, fileno) {
-	 alert("준비중");
-	 return;
+	var chk = false;
+	if( idx == 3 && num== 0 ){
+		if(fileno == 1){
+			chk = true;
+			location.href="/common/fileDown.do?fileNm=1-1.pdf&downFileNm=1-1. 윤리경영 준수 Massage.pdf";
+		}
+		else if(fileno == 2){
+			chk = true;
+			location.href="/common/fileDown.do?fileNm=1-2.pdf&downFileNm=1-2. 윤리규정.pdf";
+		}
+		else if(fileno == 3){
+			chk = true;
+			location.href="/common/fileDown.do?fileNm=1-5.pdf&downFileNm=1-5. 윤리경영 실천가이드.pdf";
+		}
+		else if(fileno == 4){
+			chk = true;
+			location.href="/common/fileDown.do?fileNm=1-3.pdf&downFileNm=1-3. 내부 감사규정.pdf";
+		}
+		else if(fileno == 5){
+			chk = true;
+			location.href="/common/fileDown.do?fileNm=1-4.pdf&downFileNm=1-4. 제보자 보호규정.pdf";
+		}
+		
+	}
+	if( chk == false ){
+		alert("준비중");		
+	}
+	return;
 }

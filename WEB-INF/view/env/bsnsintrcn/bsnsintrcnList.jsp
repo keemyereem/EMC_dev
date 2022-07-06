@@ -67,11 +67,13 @@
                                     <c:when test="${webResult.params.searchBsnsintrcnCode eq 'A012001'}">
                                     환경시설관리주식회사는 대한민국의 <b>환경분야 기초시설 운영관리 선두주자</b>로서,<br class="br_pc" />
                                     더 맑고 깨끗한 환경에서 국민들이 행복한 생활을 영위할 수 있도록<br class="br_pc" />
+                                    공공하폐수처리시설, 공공폐기물처리시설, 민간폐수처리시설, 정수처리시설, 하수관거BTL, 종합시운전 운영 등<br class="br_pc" />
                                     환경과 관련한 다양한 사업을 추진하고 있습니다.
                                     </c:when>
                                     <c:otherwise>
                                      환경시설관리주식회사는 1997년 설립 이래 <br class="br_m">20여 년간 축적된 설계, 시공, 운영 경험을 바탕으로<br class="br_pc">
                                     보다 효율적이고 <b>경제적 처리기술 개발</b>에 많은 투자와 노력을 기울이고 있으며,<br class="br_pc">
+                                    공공하폐수 처리시설, 민간폐수처리시설, 에코솔루션 등<br class="br_pc">
                                     <b>환경시설 신설/개량 사업</b>에 적극 참여, <br class="br_m">소중한 공공자산을 지켜나가고 있습니다.
 
                                     </c:otherwise>

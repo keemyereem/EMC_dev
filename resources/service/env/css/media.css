@@ -27,7 +27,8 @@
     .header .lang_select .lang_choice li {margin-right: 1.5rem;}
     .header .lang_select .lang_choice li:last-child { margin-right: 0;}
     /* footer */
-    .footer .footer_wrap {width: 140rem;}
+    .footer {padding: 4rem 2rem 0 2rem;}
+    .footer .footer_wrap {max-width: 140rem; overflow-x: hidden;}
 
     /* -----회사소개----- */
     /* 찾아오시는 길 */
@@ -1038,7 +1039,8 @@
     .container .contents .contents_inner .detail_sub_contents .inner .tb_view .view_box .file_box .file_download a img { top:0; position: absolute; padding-right: 0; left:-3rem; }
     .container .contents .contents_inner .detail_sub_contents .inner .tb_view .view_box .view_info { padding-bottom:3.5rem; }
     .container .contents .contents_inner .detail_sub_contents .inner .tb_view .view_box .view_info p img,
-    .container .contents .contents_inner .detail_sub_contents .inner .tb_view .view_box .view_info iframe { width: 100% !important; height: auto !important; }
+    .container .contents .contents_inner .detail_sub_contents .inner .tb_view .view_box .view_info iframe,
+    .container .contents .contents_inner .detail_sub_contents .inner .tb_view .view_box .view_info .image img { width: 100% !important; height: auto !important; }
     .container .contents .contents_inner .detail_sub_contents .inner .tb_view .view_nav dl { display:flex; align-items: center; padding:2rem; }
     .container .contents .contents_inner .detail_sub_contents .inner .tb_view .view_nav dl dt { padding-right:2rem; }
     .container .contents .contents_inner .detail_sub_contents .inner .tb_view .view_nav dl dt, dd { float:none; }
@@ -1225,6 +1227,7 @@
     .cont_recruit .recruit_contents .hiring_process .section2 > ul > .process05 .icon img {width: 3.7rem;height: auto;}
     .cont_recruit .recruit_contents .hiring_process .section2 > ul > li .cont .txt {width: calc(100% - 10rem);font-size: 1.4rem;line-height: 1.57;text-align: left;}
     .cont_recruit .recruit_contents .hiring_process .section2 > ul > li .cont .txt li {justify-content: left;}
+    .cont_recruit .recruit_contents .hiring_process .section2 > ul > li:first-child .cont .txt li:before {position: initial;}
     
     /*  - 인재채용 - 채용정보 : 직무소개 - 220518 */
     .cont_recruit .recruit_contents .job_intro {padding: 4rem 2rem 2rem;margin-top: 4rem;}

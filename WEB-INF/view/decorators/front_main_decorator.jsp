@@ -14,6 +14,23 @@
 <jsp:include page="/WEB-INF/view/decorators/common/head_decorator.jsp"></jsp:include>
 </c:otherwise>
 </c:choose>
+<script type="text/javascript">
+	$(document).ready( function() {
+        //html용 include
+    	 //$(".header").load("${SITE_TYPE }/env/import/headerAjax.do");
+	     //$(".sitemap").load("${SITE_TYPE }/env/import/sitemapAjax.do");
+	     $(".footer").load("${SITE_TYPE }/env/import/footerAjax.do");
+    });
+</script>
+<c:choose>
+<c:when test="${SITE_TYPE eq '/en' }">
+<script type="text/javascript" src="/resources/service/env_eng/js/jsonData.js"></script>
+</c:when>
+<c:otherwise>
+<script type="text/javascript" src="/resources/service/env/js/jsonData.js"></script>
+</c:otherwise>
+</c:choose>
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-GHV68CW5T3"></script>
 	<script>
@@ -30,12 +47,17 @@
     <!-- wrap -->
     <div class="wrap">
         <!-- header -->
+        <div class="header">
+        	<c:import url="${SITE_TYPE }/env/import/headerAjax.do" />
+        </div>
         <c:import url="/WEB-INF/view/decorators/common/header_decorator.jsp" />
         <!-- //header -->
         
         <!-- sitemap -->
         <div class="sitemap_bg"></div>
-        <div class="sitemap"></div>
+        <div class="sitemap">
+        	<c:import url="${SITE_TYPE }/env/import/sitemapAjax.do" />
+        </div>
         <!-- //sitemap -->
         
 <c:choose>
@@ -59,9 +81,9 @@
     <script>
          // 기존 head_decorator 위치 => 현재 위치로 변경
          // document.ready로 하면 출력 안될 경우가 있음
-	     $(".header").load("${SITE_TYPE }/env/import/headerAjax.do");
-	     $(".sitemap").load("${SITE_TYPE }/env/import/sitemapAjax.do");
-	     $(".footer").load("${SITE_TYPE }/env/import/footerAjax.do");	     
+	     //$(".header").load("${SITE_TYPE }/env/import/headerAjax.do");
+	     //$(".sitemap").load("${SITE_TYPE }/env/import/sitemapAjax.do");
+	     //$(".footer").load("${SITE_TYPE }/env/import/footerAjax.do");	     
     </script>
     
 </body>    

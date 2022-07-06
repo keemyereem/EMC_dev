@@ -44,7 +44,7 @@
                                     <dt><span>20<b>17</b></span>Challenges</dt>
                                     <dd class="special_br"><span>2019</span>
                                         Acquired Gyeongin Environmental Energy Corporation<br>
-                                        Acquired Honam Environmental Energy Corporation<br>
+                                        Established Honam Environmental Energy Corporation<br>
                                         Acquired Gyeongbuk Environmental Energy Corporation<br>
                                     </dd>
                                     <dd><span>2018</span>Acquired Seonam Environmental Energy Corporation</dd>

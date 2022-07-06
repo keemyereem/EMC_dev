@@ -4,7 +4,7 @@
 <%@ taglib prefix="code" uri="/WEB-INF/tlds/codeUtils.tld"%>
 <%@ taglib prefix="file" uri="/WEB-INF/tlds/fileLib.tld"%>
 
-<form name="mainForm" id="mainForm" method="post">
+<form name="mainForm" id="mainForm" method="get">
     <input type="hidden" name="<c:out value='${_csrf.parameterName}' />" value="<c:out value='${_csrf.token}' />" />
     <input type="hidden" id="bbsNo" name="bbsNo" value="<c:out value="${bbsMstDtl.bbsNo}" />" />
     <input type="hidden" id="nttNo" name="nttNo" />
@@ -47,7 +47,7 @@
 
                     <div class="disclosure_banner" data-aos="fade-up" data-aos-duration="600">
                         <p>You can check emc's disclosure in the Electronic Disclosure System (Dart).</p>
-                        <a href="javascript:;" class="btn_goDart">Go to Electronic Disclosure System.</a>
+                        <a href="https://dart.fss.or.kr/dsab001/main.do?autoSearch=true&textCrpNM=%ED%99%98%EA%B2%BD%EC%8B%9C%EC%84%A4%EA%B4%80%EB%A6%AC" target="_blank" class="btn_goDart">Go to Electronic Disclosure System.</a>
                     </div>
 
                     <div class="irsearch_contents sub_contents">

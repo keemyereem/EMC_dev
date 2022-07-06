@@ -56,8 +56,7 @@ var memberCountConTxt2_prev= '${retMap.prevTotalPine}';    // 이전값
 </script>
     <script type="text/javascript" src="/resources/service/env/js/common.js"></script>
     <script type="text/javascript" src="/resources/service/cms/js/jquery/jquery.validate.min.js"></script>
-    
-<script type="text/javascript" src="/resources/service/env_eng/js/jsonData.js"></script>
+
 <script type="text/javascript" src="/resources/service/env_eng/js/ui.js"></script>
 <script type="text/javascript" src="/resources/service/cms/js/common/ajaxScript.js"></script>
 <script type="text/javascript" src="/resources/service/cms/js/common/commonUtil.js"></script>

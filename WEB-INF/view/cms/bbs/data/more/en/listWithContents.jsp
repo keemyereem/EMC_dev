@@ -4,7 +4,7 @@
 <%@ taglib prefix="code" uri="/WEB-INF/tlds/codeUtils.tld"%>
 <%@ taglib prefix="file" uri="/WEB-INF/tlds/fileLib.tld"%>
 
-<form name="mainForm" id="mainForm" method="post">
+<form name="mainForm" id="mainForm" method="get">
     <input type="hidden" name="<c:out value='${_csrf.parameterName}' />" value="<c:out value='${_csrf.token}' />" />
     <input type="hidden" id="bbsNo" name="bbsNo" value="<c:out value='${webResult.params.bbsNo}' />" />
     <input type="hidden" id="nttNo" name="nttNo" />
@@ -22,7 +22,7 @@
                         </a>
                     </div>
                     <div class="sub_visual_nav_next">
-                        <a href="javascript:linkBBS(4,0, 'BM0000000002');" title="다음메뉴로 이동">
+                        <a href="javascript:linkBBS(4,0, 'BM0000000006');" title="다음메뉴로 이동">
                             <img src="/resources/service/env/images/common/sub_visual_nav_next.png" alt="sub_visual_nav_next">
                             <span>IR</span>
                         </a>
@@ -82,6 +82,9 @@
                                 </p>
                             </div>
                             <div class="sc_obj">
+                                <img src="/resources/service/env/images/sustain/mission_en.png" alt="mission_img">
+                                <img src="/resources/service/env/images/sustain/mission_m_en.png" alt="mission_m_img">
+                                <!-- 
                                 <p><span>Mission</span> ‘Good company’ growing together with our community through sharing </p>
                                 <div>
                                     <div>
@@ -122,7 +125,8 @@
                                             </div>
                                         </li>
                                     </ul>
-                                </div>
+                                </div> 
+                                -->
                             </div>
                         </section>
 

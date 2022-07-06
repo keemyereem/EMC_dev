@@ -253,7 +253,7 @@
     <update id="changeCodeOrder" >
         UPDATE CO_CODE
             SET UPPER_CODE = #{upperCode}
-                , EXPSR_ORDR = ${expsrOrdr}
+                , EXPSR_ORDR = #{expsrOrdr}
         WHERE
             CODE = #{code}
     </update>

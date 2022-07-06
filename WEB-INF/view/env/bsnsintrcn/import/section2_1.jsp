@@ -338,7 +338,7 @@
                                 </div>
                                 <div class="nav_box box02">
                                     <div class="box_text" data-aos="fade-up" data-aos-duration="700">
-                                        <div class="onm_title">폐기물처리시설</div>
+                                        <div class="onm_title">폐기물 처리시설</div>
                                         <div class="onm_desciption">
                                             emc는 폐기물처리시설인 건조, 소각, 바이오, <br class="br_m">매립 등과 같은<br class="br_pc">
                                             최다 운영 실적과 기술력을 바탕으로 <br class="br_m">전국 폐기물 처리시설 22여개를 <br class="br_pc">
@@ -380,7 +380,7 @@
                                 </div>
                                 <div class="nav_box box03">
                                     <div class="box_text" data-aos="fade-up" data-aos-duration="700">
-                                        <div class="onm_title">민간폐수처리처리시설</div>
+                                        <div class="onm_title">민간폐수처리시설</div>
                                         <div class="onm_desciption">
                                             emc는 환경기초시설 운영에서 습득한 Know-how를 <br>
                                             민간산업폐수분야에 적용하여 고객의 Needs를 <br class="br_m">충족하기 위한 <br class="br_pc">
@@ -391,17 +391,29 @@
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
                                                 <div class="onm_slide_img">
+                                                    <img src="/resources/service/env/images/business/onm_slide03_img03.png" alt="민간폐수처리처리시설 이미지" />
+                                                </div>
+                                                <div class="onm_slide_text_box">
+                                                    <h3>청주 SK하이닉스 폐수처리시설</h3>
+                                                    <div>
+                                                        <dl><dt>시설용량</dt><dd>145,200㎥/일</dd></dl>
+                                                        <dl><dt>처리공법</dt><dd>응집침전, Bardenpho 외</dd></dl>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="onm_slide_img">
                                                     <img src="/resources/service/env/images/business/onm_slide03_img01.png" alt="민간폐수처리처리시설 이미지" />
                                                 </div>
                                                 <div class="onm_slide_text_box">
-                                                    <h3>코오롱구미폐수처리장</h3>
+                                                    <h3>코오롱구미공장 폐수처리시설</h3>
                                                     <div>
                                                         <dl><dt>시설용량</dt><dd>15,000㎥/일</dd></dl>
                                                         <dl><dt>처리공법</dt><dd>KIMAS/표준활성슬러지법</dd></dl>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="swiper-slide">
+                                            <!-- <div class="swiper-slide">
                                                 <div class="onm_slide_img">
                                                     <img src="/resources/service/env/images/business/onm_slide03_img02.png" alt="민간폐수처리처리시설 이미지" />
                                                 </div>
@@ -412,19 +424,7 @@
                                                         <dl><dt>처리공법</dt><dd>EGSB+표준활성슬러지법</dd></dl>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="onm_slide_img">
-                                                    <img src="/resources/service/env/images/business/onm_slide03_img03.png" alt="민간폐수처리처리시설 이미지" />
-                                                </div>
-                                                <div class="onm_slide_text_box">
-                                                    <h3>청주 SK하이닉스 폐수처리시설</h3>
-                                                    <div>
-                                                        <dl><dt>시설용량</dt><dd>-</dd></dl>
-                                                        <dl><dt>처리공법</dt><dd>-</dd></dl>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                     <div class="onm_box_slider_button" data-aos="fade-up" data-aos-duration="700">

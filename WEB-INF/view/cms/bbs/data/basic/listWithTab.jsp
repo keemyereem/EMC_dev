@@ -4,11 +4,11 @@
 <%@ taglib prefix="code" uri="/WEB-INF/tlds/codeUtils.tld"%>
 <%@ taglib prefix="file" uri="/WEB-INF/tlds/fileLib.tld"%>
 
-<form name="mainForm" id="mainForm" method="post">
+<form name="mainForm" id="mainForm" method="get">
     <input type="hidden" name="<c:out value='${_csrf.parameterName}' />" value="<c:out value='${_csrf.token}' />" />
     <input type="hidden" id="nttNo" name="nttNo" />
 
-    <div class="sub_visual invest_visual">
+    <div class="sub_visual recruit_visual">
                 <div class="sub_visual_nav">
                     <h2>인재채용</h2>
                     <div class="sub_visual_nav_prev">

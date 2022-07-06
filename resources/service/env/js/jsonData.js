@@ -101,9 +101,11 @@ function resultMenu(data){
 
 	});
 
-	//console.log(html);
+	//console.log(html); // gnb
+	console.log("=============================================");
+	//console.log(sitemap);
 
-	$('#gnbWrap').prepend(html);
+	$('#gnbWrap').prepend(html); 
 	$('.sitemap ul').append(sitemap);
 	$('.sub_visual_menu').append(location);
 	// console.log(oneNum,twoNum);

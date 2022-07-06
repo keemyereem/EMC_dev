@@ -99,7 +99,7 @@
                                     </dl>
 
                                     <p class="sign">
-                                        emc CEO 권지훈<br>
+                                        대표이사 권지훈<br>
                                         <span>Kwon Jihoon</span>
                                     </p>
                                 </div>

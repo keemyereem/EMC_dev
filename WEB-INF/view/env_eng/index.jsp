@@ -275,13 +275,15 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li onclick="linkBBS(5,1, 'BM0000000004');">
+                                <li onclick="javascript:link(1,1);">
                                     <div class="emc_list_box">
-                                        <div class="emc_tit">Recruitment <br>Information</div>
+                                        <div class="emc_tit">History</div>
+                                        <!-- 
                                         <div class="emc_sub">
                                             We are waiting for challenging, <br>
                                             creative, and proud people to join our team.
-                                        </div>
+                                        </div> 
+                                        -->
                                     </div>
                                 </li>
                                 <li onclick="linkBBS(4,2, 'BM0000000007');">

@@ -10,7 +10,7 @@
                         </a>
                     </div>
                     <div class="sub_visual_nav_next">
-                        <a href="javascript:link(4,0);" title="다음메뉴로 이동">
+                        <a href="javascript:linkBBS(4,0, 'BM0000000006');" title="다음메뉴로 이동">
                             <img src="/resources/service/env/images/common/sub_visual_nav_next.png" alt="sub_visual_nav_next">
                             <span>IR</span>
                         </a>
@@ -36,8 +36,8 @@
                         <div class="inner">
                             <div class="tb_top">
                                 <ul class="nav_btn" data-aos="fade-up" data-aos-duration="600" data-aos-offset="200">
-                                    <li class=""><a href="/env/sub.do?MENUID=safety_health&MENUNO=3">Safety and Health</a></li>
-                                    <li class="on"><a href="/env/sub.do?MENUID=proposal&MENUNO=3">Suggestions and Reports</a></li>
+                                    <li class=""><a href="/en/sub.do?MENUID=safety_health&MENUNO=3">Safety and Health</a></li>
+                                    <li class="on"><a href="/en/sub.do?MENUID=proposal&MENUNO=3">Suggestions and Reports</a></li>
                                 </ul>
                             </div>
 

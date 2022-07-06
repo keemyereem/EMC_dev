@@ -5,14 +5,14 @@
             <!-- <a href="/en/sub.do?MENUID=terms_of_services">Terms of Services</a> -->
             <!-- <a href="include/privacy.html" class="privacy_policy">Privacy Policy</a> -->
             <a href="javascript:link(1,4);">Find Us</a>
-            <a href="https://ethics.sk.co.kr/" target="_blank" class="speakup">Consulting & Report</a>
+            <a href="https://ethics.sk.co.kr/Main/Index" target="_blank" class="speakup">Report</a>
         </div>
     </div>
     <div class="footer_info">
-        <div><span>Address</span> 13910 K-tower, 88 Iljik-ro, <br class="br_m">Manan-gu, Anyang-si, Gyeonggi-do</div>
-        <div><span>Tel</span> 031-8091-2000</div>
+        <div><span>Address</span> 13901 K-tower, 88 Iljik-ro, <br class="br_m">Manan-gu, Anyang-si, Gyeonggi-do</div>
+        <div><span>Tel</span>+82 31-8091-2000</div>
     </div>
-    <p class="copyright">COPYRIGHT (C)2021 emc-env. ALL RIGHTS RESERVED.</p>
+    <p class="copyright">COPYRIGHT (C)2022 emc-env. ALL RIGHTS RESERVED.</p>
     <div class="family_site">
         <div class="site_link">
             <ul class="link_list">

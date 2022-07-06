@@ -12,7 +12,7 @@
         <div><span>Address</span> 13901 경기도 안양시 만안구 일직로 88 케이타워</div>
         <div><span>Tel</span> 031-8091-2000</div>
     </div>
-    <p class="copyright">COPYRIGHT (C)2021 emc-env. ALL RIGHTS RESERVED.</p>
+    <p class="copyright">COPYRIGHT (C)2022 emc-env. ALL RIGHTS RESERVED.</p>
     <div class="family_site">
         <div class="site_link">
             <ul class="link_list">

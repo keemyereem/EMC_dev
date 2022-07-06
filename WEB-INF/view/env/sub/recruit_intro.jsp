@@ -203,7 +203,7 @@
                                     </div>
                                     <div class="job_intro_box job_intro_box07" data-aos="fade-up" data-aos-offset="400">
                                         <div class="txt">
-                                            <div class="tit">SOC</div>
+                                            <div class="tit">SOC/사업개발</div>
                                             <ul>
                                                 <li>신규 SOC 사업 검토 및 발굴</li>
                                                 <li>SOC 사업을 위한 공정 검토, 운영계획 검토</li>
